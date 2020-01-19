@@ -1,0 +1,43 @@
+#include "reco_uboone_data_mcc9_8_driver_common.fcl"
+
+process_name: DataRecoStage1Test
+
+services.TFileService.fileName: "reco_stage_1_hist.root"
+physics.reco:                   [ @sequence::microboone_reco_data_stage1 ]
+physics.ana:                    [ @sequence::microboone_dqm_ana_stage1 ]
+physics.trigger_paths:          [ reco ]
+physics.end_paths:              [ ana, stream1 ]
+outputs.out1.fileName:          "%ifb_%tc_reco1.root"
+outputs.out1.dataTier:          "reconstructed"
+source.inputCommands:           ["keep *_*_*_*", "drop *_*_*_Data*Reco*" ]
+
+
+#temporary since new RawDigits are baseline corrected
+services.DetPedestalService.DetPedestalRetrievalAlg.UseDB:           false
+services.DetPedestalService.DetPedestalRetrievalAlg.DefaultCollMean: 0
+services.DetPedestalService.DetPedestalRetrievalAlg.DefaultIndMean:  0
+
+microboone_tfile_metadata:
+{
+    JSONFileName:          "reco_stage_1_hist.root.json"
+    GenerateTFileMetadata: true
+    dataTier:              "root-tuple"
+    fileFormat:            "root"
+}
+
+# Override the database URL to use the nginx server on the theta login node
+#services.ChannelStatusService.ChannelStatusProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.DetPedestalService.DetPedestalRetrievalAlg.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.ElectronicsCalibService.ElectronicsCalibProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.PmtGainService.PmtGainProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.XNormCorrectionProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider_Plane0.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider_Plane1.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider_Plane2.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider_Plane0.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider_Plane1.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider_Plane2.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+#services.TPCEnergyCalibService.TPCEnergyCalibProvider.dEdxCorrectionProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
+
