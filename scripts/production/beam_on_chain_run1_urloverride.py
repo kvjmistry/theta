@@ -34,17 +34,17 @@ def getNumberEvents(filename, filelist):
 
 # ---------------------------------------------------------------------------------------------
 # The files to run over
-files = glob.glob("/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamoff/prod_extnumi_swizzle_inclusive_v3_tmnt_stride2_offset0_goodruns/*.root")
+files = glob.glob("/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamon/prod_numi_swizzle_inclusive_v3_tmnt_stride2_offset0_run6748_goodruns_beamdata/*.root")
 
 # The input eventlist
-input_event_list="/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamoff/event_lists/event_list_prod_extnumi_swizzle_inclusive_v3_tmnt_stride2_offset0_goodruns_FileNames_withPath.list"
+input_event_list="/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamon/event_lists/event_list_prod_numi_swizzle_inclusive_v3_tmnt_stride2_offset0_run6748_goodruns_FileNames_withPath.list"
 
-join_fcl="/lus/theta-fs0/projects/uboone/kmistry/fcl/join_fcls/join_run1_beamoff.fcl"
+join_fcl="/lus/theta-fs0/projects/uboone/kmistry/fcl/join_fcls/join_run1_beamon.fcl"
 
 tot_events=0
 
 # The total number of events to process, set this number to infinity to populate the db for all events
-max_events=10000
+max_events=800
 
 for i, _file in enumerate(files):
     
@@ -64,7 +64,7 @@ for i, _file in enumerate(files):
     print(join_args_full,"  ", nevents)
     #print(join_args)
 
-    workflow  = f"beamoff_chain_run1"
+    workflow  = f"beamon_chain_run1"
 
     timestamp_args  = f"{_file}"
 
@@ -82,7 +82,7 @@ for i, _file in enumerate(files):
 
     mergeFinal_job = dag.add_job(
         name = f"joinedFinal_{i}",
-        workflow = workflow,
+        workflow = "beamon_chain_run1_join",
         description = "joining final outputfiles",
         num_nodes = 1,
         ranks_per_node = 1,
@@ -93,23 +93,23 @@ for i, _file in enumerate(files):
     )
     
     for ievent in range(nevents):
-        beamoff_args  = f"{_file} {ievent}"
+        beamon_args  = f"{_file} {ievent}"
 
-        beamoff_job = dag.add_job(
-            name = f"beamoff_{i}_{ievent}",
+        beamon_job = dag.add_job(
+            name = f"beamon_{i}_{ievent}",
             workflow = workflow,
-            description = "uboone full beam off chain",
+            description = "uboone full beam on chain",
             num_nodes = 1,
             ranks_per_node = 1,
             node_packing_count = node_pack_count,
-            args = beamoff_args,
-            wall_time_minutes = 60,
-            application= "uboonecode_beamoff_chain_run1"
+            args = beamon_args,
+            wall_time_minutes = 80,
+            application= "uboonecode_beamon_chain_run1"
         )
 
         # add_dependency(parent, child)
-        dag.add_dependency(timestamp_job,beamoff_job)
-        dag.add_dependency(beamoff_job,mergeFinal_job)
+        dag.add_dependency(timestamp_job,beamon_job)
+        dag.add_dependency(beamon_job,mergeFinal_job)
 
 
 print("Total number of events to be processed: ", tot_events)
