@@ -34,7 +34,7 @@ outputs:
 
 services.FileCatalogMetadata.applicationVersion: "v08_00_00_27" 
 services.FileCatalogMetadataMicroBooNE: {
-    FCLName: "run_merge_beamdata.fcl/reco_uboone_data_mcc9_8_driver_stage1.fcl/run_celltreeub_prod.fcl/standard_larcv_uboone_data2d_prod.fcl/crt_merge_extra_v06_26_01_13.fcl/reco_uboone_mcc9_8_driver_data_numi_optical.fcl/reco_uboone_data_mcc9_8_driver_stage2_beamOn_numi.fcl/reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOn_run1_numi.fcl" 
+    FCLName: "reco_uboone_data_mcc9_8_driver_stage1.fcl/run_celltreeub_prod.fcl/standard_larcv_uboone_data2d_prod.fcl/crt_merge_extra_v06_26_01_13.fcl/reco_uboone_mcc9_8_driver_data_numi_optical.fcl/reco_uboone_data_mcc9_8_driver_stage2_beamOn_numi.fcl/reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOn_run1_numi.fcl" 
     FCLVersion: "v08_00_00_27" 
     ProjectName: "data_numi_run1_beamon_theta_mcc9.1" 
     ProjectStage: "post_reco2" 
