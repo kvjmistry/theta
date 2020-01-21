@@ -20,7 +20,14 @@ if [ -z $SINGULARITYENV_check_larcv ]; then SINGULARITYENV_check_larcv="FileNotF
 if [ -z $SINGULARITYENV_check_bnm ]; then SINGULARITYENV_check_bnm="FileNotFound"; fi
 if [ -z $SINGULARITYENV_check_r1a ]; then SINGULARITYENV_check_r1a="FileNotFound"; fi
 if [ -z $SINGULARITYENV_check_reco2 ]; then SINGULARITYENV_check_reco2="FileNotFound"; fi
-if [ -z $SINGULARITYENV_check_postreco2 ]; then SINGULARITYENV_check_postreco2="FileNotFound"; fi
+
+# This is the last file, so if this exists, then we can exit the job without running anything
+if [ -z $SINGULARITYENV_check_postreco2 ]; then 
+  SINGULARITYENV_check_postreco2="FileNotFound";
+else
+  echo "exit 0"
+  exit 0
+fi
 
 # Print the status of the files
 echo
@@ -141,14 +148,19 @@ echo "TIMESTAMP_T7 $(date +%s)"
 exit_status=$(ls | grep "all.root")
 
 if [[ -z "$exit_status" ]]; then
+  echo "The post reco2 file doesn't exit, so this job has FAILED..."
   echo "exit 1"
   exit 1
 elif [[ -n "$exit_status" ]]; then
+  echo "Found the post reco2 file, so this job has SUCCEEDED..."
   echo "Removing previous successful files from directory"
   echo "rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root"
   rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root
   echo "exit 0"
   exit 0
+else
+  echo "Eh?! Whats this exit status?"
+  exit 2
 fi
 
 # -------------------------------------------------------------
