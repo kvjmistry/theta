@@ -25,6 +25,7 @@ if [ -z $SINGULARITYENV_check_reco2 ]; then SINGULARITYENV_check_reco2="FileNotF
 if [ -z $SINGULARITYENV_check_postreco2 ]; then 
   SINGULARITYENV_check_postreco2="FileNotFound";
 else
+  echo "The reco2 fcl file exists, so this job must have finished fine..."
   echo "exit 0"
   exit 0
 fi
