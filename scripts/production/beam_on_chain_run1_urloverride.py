@@ -44,14 +44,28 @@ join_fcl="/lus/theta-fs0/projects/uboone/kmistry/fcl/join_fcls/join_run1_beamon.
 tot_events=0
 
 # The total number of events to process, set this number to infinity to populate the db for all events
-max_events=800
+max_events=8000000
+
+# The total number of files to process
+max_files=192
+
+# The total number of files to be processed
+files_processed=0
 
 for i, _file in enumerate(files):
-    
+   
+    if i%100==0:
+        print("On File number: ", i+1)
+ 
     # Check if the total number of events exceeds the number of events we want to process
     if tot_events >= max_events:
         break
-    
+    # Check if the max files is greater than threshold
+    elif i >= max_files:
+        break
+
+    files_processed=i+1
+
     join_args_full=os.path.basename(_file)
     join_args=join_fcl+" "+join_args_full[:-5]
     
@@ -64,13 +78,15 @@ for i, _file in enumerate(files):
     print(join_args_full,"  ", nevents)
     #print(join_args)
 
-    workflow  = f"beamon_chain_run1"
+    workflow_timestamp = f"beamon_chain_run1_timestamp"
+    workflow_main  = f"beamon_chain_run1"
+    workflow_join  = f"beamon_chain_run1_join"
 
     timestamp_args  = f"{_file}"
 
     timestamp_job = dag.add_job(
         name = f"timestamp_{i}",
-        workflow = workflow,
+        workflow = workflow_timestamp,
         description = "Container that gets the timestamps for the event",
         num_nodes = 1,
         ranks_per_node = 1,
@@ -82,7 +98,7 @@ for i, _file in enumerate(files):
 
     mergeFinal_job = dag.add_job(
         name = f"joinedFinal_{i}",
-        workflow = "beamon_chain_run1_join",
+        workflow = workflow_join,
         description = "joining final outputfiles",
         num_nodes = 1,
         ranks_per_node = 1,
@@ -97,7 +113,7 @@ for i, _file in enumerate(files):
 
         beamon_job = dag.add_job(
             name = f"beamon_{i}_{ievent}",
-            workflow = workflow,
+            workflow = workflow_main,
             description = "uboone full beam on chain",
             num_nodes = 1,
             ranks_per_node = 1,
@@ -113,4 +129,7 @@ for i, _file in enumerate(files):
 
 
 print("Total number of events to be processed: ", tot_events)
-print(workflow)
+print("Total number of files to be processed: ", files_processed)
+print(workflow_timestamp)
+print(workflow_main)
+print(workflow_join)
