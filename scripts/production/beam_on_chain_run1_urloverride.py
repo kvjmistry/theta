@@ -120,7 +120,7 @@ for i, _file in enumerate(files):
             node_packing_count = node_pack_count,
             args = beamon_args,
             wall_time_minutes = 80,
-            application= "uboonecode_beamon_chain_run1"
+            application= "beamon_chain_run1"
         )
 
         # add_dependency(parent, child)
