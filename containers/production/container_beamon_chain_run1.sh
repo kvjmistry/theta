@@ -2,7 +2,6 @@
 echo "First Statement"
 date
 echo "TIMESTAMP_T7 $(date +%s)"
-export SINGULARITYENV_HOME=/lus/theta-fs0/projects/uboone
   
 # Check if files exist, if it does then we skip this process to run
 export SINGULARITYENV_check_reco1=$(ls | grep reco1.root)
@@ -47,8 +46,6 @@ if [ $SINGULARITYENV_check_reco1 == "FileNotFound" ] || [ $SINGULARITYENV_check_
   SINGULARITYENV_v01b="true"
 fi
 
-sleep $[ ( $RANDOM % 10 )  + 1 ]s
-
 echo
 echo "Making custom fcl files with overrides"
 # makes fcl file with _url_override.fcl extension
@@ -70,6 +67,9 @@ source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus
 
 # postreco2
 source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/postreco2/reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOn_run1_numi.fcl"
+
+export SINGULARITYENV_HOME=/lus/theta-fs0/projects/uboone
+sleep $[ ( $RANDOM % 10 )  + 1 ]s
 
 singularity run --no-home -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/uboone/containers/fnal-wn-sl7_latest.sif <<EOF
   echo 
@@ -131,8 +131,8 @@ singularity run --no-home -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/ub
   fi  
   echo "------------------------------------------------------------------------"
   if [ $SINGULARITYENV_check_postreco2 == "FileNotFound" ]; then
-    echo "lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOn_numi_url_override.fcl  -s *reco2.root"
-    lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOn_numi_url_override.fcl  -s *reco2.root
+    echo "lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOn_run1_numi_url_override.fcl  -s *reco2.root"
+    lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOn_run1_numi_url_override.fcl  -s *reco2.root
   fi
   echo "------------------------------------------------------------------------"
   echo "Finished Executing"
@@ -155,8 +155,8 @@ if [[ -z "$exit_status" ]]; then
 elif [[ -n "$exit_status" ]]; then
   echo "Found the post reco2 file, so this job has SUCCEEDED..."
   echo "Removing previous successful files from directory"
-  echo "rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root"
-  rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root
+  echo "rm *reco2.root *r1a.root *BNMS.root *postdl.root *postwcct.root *reco1.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root"
+  rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root *postwcct.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root
   echo "exit 0"
   exit 0
 else
