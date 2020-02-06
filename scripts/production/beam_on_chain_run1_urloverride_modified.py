@@ -44,10 +44,10 @@ join_fcl="/lus/theta-fs0/projects/uboone/kmistry/fcl/join_fcls/join_run1_beamon.
 tot_events=0
 
 # The total number of events to process, set this number to infinity to populate the db for all events
-max_events=8000000
+max_events=10000
 
 # The total number of files to process
-max_files=2
+max_files=1000000000
 
 # The total number of files to be processed
 files_processed=0
@@ -109,23 +109,37 @@ for i, _file in enumerate(files):
     )
     
     for ievent in range(nevents):
-        beamon_args  = f"{_file} {ievent}"
+        beamon_reco1_args  = f"{_file} {ievent}"
+        beamon_reco2_args  = f"{ievent}"
 
-        beamon_job = dag.add_job(
-            name = f"beamon_{i}_{ievent}",
+        beamon_reco1_job = dag.add_job(
+            name = f"beamon_reco1_{i}_{ievent}",
             workflow = workflow_main,
-            description = "uboone full beam on chain",
+            description = "uboone reco1 beam on chain",
             num_nodes = 1,
             ranks_per_node = 1,
             node_packing_count = node_pack_count,
-            args = beamon_args,
+            args = beamon_reco1_args,
             wall_time_minutes = 80,
-            application= "beamon_chain_run1"
+            application= "beamon_chain_run1_reco1"
+        )
+
+        beamon_reco2_job = dag.add_job(
+            name = f"beamon_reco2_{i}_{ievent}",
+            workflow = workflow_main,
+            description = "uboone reco2 beam on chain",
+            num_nodes = 1,
+            ranks_per_node = 1,
+            node_packing_count = node_pack_count,
+            args = beamon_reco2_args,
+            wall_time_minutes = 80,
+            application= "beamon_chain_run1_reco2"
         )
 
         # add_dependency(parent, child)
-        dag.add_dependency(timestamp_job,beamon_job)
-        dag.add_dependency(beamon_job,mergeFinal_job)
+        dag.add_dependency(timestamp_job,beamon_reco1_job)
+        dag.add_dependency(beamon_reco1_job, beamon_reco2_job)
+        dag.add_dependency(beamon_reco2_job,mergeFinal_job)
 
 
 print("Total number of events to be processed: ", tot_events)

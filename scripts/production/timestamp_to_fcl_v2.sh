@@ -2,11 +2,13 @@
 
 # This script will take the input string and convert it to a fcl parameter
 
+# USAGE: ./timestamp_to_fcl_v2.sh <event number> <input fcl> <the timestamp list with correct version> 
+
 # This is left here for demonstration purposes of what the input string should be
 #string="event_0,channelstatus_data_v3r2,1532822160.0,crt_channelstatus_data_v2r0,1522085400.0,detpedestals_data_v1r0,1508184720.0,dqdx_xnorm_data_v1r1,1549013520.0,dqdx_xshape_plane0_data_v1r2,1545771720.0,dqdx_xshape_plane1_data_v1r2,1545771720.0,dqdx_xshape_plane2_data_v1r2,1545771720.0,dqdx_yz_plane0_data_v2r2,1515984420.0,dqdx_yz_plane1_data_v2r2,1515984420.0,dqdx_yz_plane2_data_v2r2,1515984420.0,electronicscalib_data_v1r3,1504353900.0,elifetime_data_v1r1,1530100800.0,detpmtgains_data_v1r0,1552431720.0,lightyieldscale_data_v2r0,1553439210.0,dedx_correction_provider_data,860747520.0"
 
 # This takes an input string rather than using the defaults as formatted above
-string=$(cat mylist_timestamps.txt | grep "event $1,")
+string=$(cat $3 | grep "event $1,")
 echo $string
 
 string="${string:6}"
@@ -42,6 +44,13 @@ do
         if [ $line != "channelstatus_data_v3r2" ]; then str_chan="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
     
     #___________________________________________________________________________________________________
+    elif [ $line == "channelstatus_data_v3r1" ] || [ $name == "channelstatus_data_v3r1" ]; then
+        str="services.ChannelStatusService.ChannelStatusProvider.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="channelstatus_data_v3r1"
+
+        if [ $line != "channelstatus_data_v3r1" ]; then str_chan="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi  
+    #___________________________________________________________________________________________________
     elif [ $line == "crt_channelstatus_data_v2r0" ] || [ $name == "crt_channelstatus_data_v2r0" ]; then
         str="services.CRTChannelStatusService.ChannelStatusProvider.DatabaseRetrievalAlg.OverrideURL: "
         name=$line
@@ -62,6 +71,13 @@ do
         str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.XNormCorrectionProvider.DatabaseRetrievalAlg.OverrideURL: "
         name=$line
         var="dqdx_xnorm_data_v1r1"
+
+        if [ $line != "dqdx_xnorm_data_v1r1" ]; then str_xnorm="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+    #___________________________________________________________________________________________________
+    elif [ $line == "dqdx_xnorm_data_v1r0" ] || [ $name == "dqdx_xnorm_data_v1r0" ]; then
+        str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.XNormCorrectionProvider.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="dqdx_xnorm_data_v1r0"
 
         if [ $line != "dqdx_xnorm_data_v1r1" ]; then str_xnorm="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
     #___________________________________________________________________________________________________
@@ -88,6 +104,30 @@ do
 
         if [ $line != "dqdx_xshape_plane2_data_v1r2" ]; then str_dqdx_plane2="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
     #___________________________________________________________________________________________________
+    elif [ $line == "dqdx_xshape_plane0_data_v1r1" ] || [ $name == "dqdx_xshape_plane0_data_v1r1"  ] ; then
+        str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider_Plane0.DatabaseRetrievalAlg.OverrideURL: "
+        str2="services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="dqdx_xshape_plane0_data_v1r1"
+
+        if [ $line != "dqdx_xshape_plane0_data_v1r1" ]; then str_dqdx_plane0="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; str_dqdx="${str2}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+    
+    #___________________________________________________________________________________________________
+    elif [ $line == "dqdx_xshape_plane1_data_v1r1" ] || [ $name == "dqdx_xshape_plane1_data_v1r1"  ] ; then
+        str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider_Plane1.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="dqdx_xshape_plane1_data_v1r1"
+
+        if [ $line != "dqdx_xshape_plane1_data_v1r1" ]; then str_dqdx_plane1="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+    #___________________________________________________________________________________________________
+    elif [ $line == "dqdx_xshape_plane2_data_v1r1" ] || [ $name == "dqdx_xshape_plane2_data_v1r1"  ] ; then
+        str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.XShapeCorrectionProvider_Plane2.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="dqdx_xshape_plane2_data_v1r1"
+
+        if [ $line != "dqdx_xshape_plane2_data_v1r1" ]; then str_dqdx_plane2="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+
+    #___________________________________________________________________________________________________
     elif [ $line == "dqdx_yz_plane0_data_v2r2" ] || [ $name == "dqdx_yz_plane0_data_v2r2"  ] ; then
         str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider_Plane0.DatabaseRetrievalAlg.OverrideURL: "
         str2="services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider.DatabaseRetrievalAlg.OverrideURL: "
@@ -109,6 +149,30 @@ do
         var="dqdx_yz_plane2_data_v2r2"
 
         if [ $line != "dqdx_yz_plane2_data_v2r2" ]; then str_yz_plane2="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+
+    #___________________________________________________________________________________________________
+    elif [ $line == "dqdx_yz_plane0_data_v1r0" ] || [ $name == "dqdx_yz_plane0_data_v1r0"  ] ; then
+        str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider_Plane0.DatabaseRetrievalAlg.OverrideURL: "
+        str2="services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="dqdx_yz_plane0_data_v1r0"
+
+        if [ $line != "dqdx_yz_plane0_data_v1r0" ]; then str_yz_plane0="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; str_yz="${str2}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+    #___________________________________________________________________________________________________
+    elif [ $line == "dqdx_yz_plane1_data_v1r0" ] || [ $name == "dqdx_yz_plane1_data_v1r0"  ] ; then
+        str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider_Plane1.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="dqdx_yz_plane1_data_v1r0"
+
+        if [ $line != "dqdx_yz_plane1_data_v1r0" ]; then str_yz_plane1="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+    #___________________________________________________________________________________________________
+    elif [ $line == "dqdx_yz_plane2_data_v1r0" ] || [ $name == "dqdx_yz_plane2_data_v1r0"  ] ; then
+        str="services.TPCEnergyCalibService.TPCEnergyCalibProvider.YZCorrectionProvider_Plane2.DatabaseRetrievalAlg.OverrideURL: "
+        name=$line
+        var="dqdx_yz_plane2_data_v1r0"
+
+        if [ $line != "dqdx_yz_plane2_data_v1r0" ]; then str_yz_plane2="${str}"\""${html_path}${var}/${var}_${line}.html"\"""; fi
+
     #___________________________________________________________________________________________________
     elif [ $line == "electronicscalib_data_v1r3" ] || [ $name == "electronicscalib_data_v1r3"  ] ; then
         str="services.ElectronicsCalibService.ElectronicsCalibProvider.DatabaseRetrievalAlg.OverrideURL: "
@@ -164,7 +228,7 @@ output_fcl=$output_fcl"_url_override.fcl"
 echo "Making $output_fcl"
 
 # The reco1 fcls dont override all the params so we need special cases for these
-if [ $input_fcl == "reco_uboone_data_mcc9_8_driver_stage1.fcl" ] || [ $input_fcl == "standard_larcv_uboone_data2d_prod.fcl" ] ; then
+if [ $input_fcl == "reco_uboone_data_mcc9_8_driver_stage1.fcl" ]; then
     cat $2 > $output_fcl
     echo >> $output_fcl
     echo $str_chan >> $output_fcl

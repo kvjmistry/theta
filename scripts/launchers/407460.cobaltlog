@@ -1,0 +1,30 @@
+Jobid: 407460
+qsub --mode script -A uboone -n 128 -q default -t 70 --attrs ssds=required:ssd_size=128 debug_launch.sh
+Wed Feb 05 01:19:26 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers
+jobid 407460 submitted from terminal /dev/pts/6
+Thu Feb 06 00:27:20 2020 +0000 (UTC) Info: job is not being held; ignoring release request
+2020-02-06 17:07:43,364 INFO: Starting Resource_Prologue
+2020-02-06 17:07:43,388 DEBUG: no enabling attribute found
+2020-02-06 17:07:43,388 INFO: Resource_Prologue finished with exit code 0
+Thu Feb 06 17:08:15 2020 +0000 (UTC) 
+Thu Feb 06 17:08:15 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/debug_launch.sh'
+Thu Feb 06 17:08:15 2020 +0000 (UTC) 
+Thu Feb 06 17:08:15 2020 +0000 (UTC) Environment:
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_PARTCORES=64
+Thu Feb 06 17:08:15 2020 +0000 (UTC) SHELL=/bin/bash
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_PARTNAME=24-29,490-499,610-619,1052-1059,1278-1279,1300-1309,1470-1479,1491,1497,1691-1699,1703,1791,1794-1795,2290-2294,2296-2299,2324,2360-2369,2460-2461,2469,2560-2569,2582-2587,2593,2595,2599,2901-2903,2917,3000,3034,3930-3931,3933-3939
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_JOBID=407460
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_STARTTIME=1581008832
+Thu Feb 06 17:08:15 2020 +0000 (UTC) LOGNAME=kmistry
+Thu Feb 06 17:08:15 2020 +0000 (UTC) USER=kmistry
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_ENDTIME=1581013032
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_PARTSIZE=128
+Thu Feb 06 17:08:15 2020 +0000 (UTC) HOME=/home/kmistry
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_JOBSIZE=128
+Thu Feb 06 17:08:15 2020 +0000 (UTC) COBALT_QUEUE=default
+Thu Feb 06 17:08:15 2020 +0000 (UTC) 
+Thu Feb 06 17:08:15 2020 +0000 (UTC) Info: stdin received from /dev/null
+Thu Feb 06 17:08:15 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/407460.output
+Thu Feb 06 17:08:15 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/407460.error
+Thu Feb 06 17:08:15 2020 +0000 (UTC) 
