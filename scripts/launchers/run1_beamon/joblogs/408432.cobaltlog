@@ -1,0 +1,30 @@
+Jobid: 408432
+qsub --mode script -A uboone -n 5 -q debug-flat-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamon.sh
+Sat Feb 08 18:28:04 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon
+jobid 408432 submitted from terminal /dev/pts/1
+2020-02-08 18:51:29,794 INFO: Starting Resource_Prologue
+2020-02-08 18:51:29,796 DEBUG: no enabling attribute found
+2020-02-08 18:51:29,796 INFO: Resource_Prologue finished with exit code 0
+Sat Feb 08 18:52:03 2020 +0000 (UTC) 
+Sat Feb 08 18:52:03 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/launch_run1_beamon.sh'
+Sat Feb 08 18:52:03 2020 +0000 (UTC) 
+Sat Feb 08 18:52:03 2020 +0000 (UTC) Environment:
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_PARTCORES=64
+Sat Feb 08 18:52:03 2020 +0000 (UTC) SHELL=/bin/bash
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_PARTNAME=0-2,10-11
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_JOBID=408432
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_STARTTIME=1581187866
+Sat Feb 08 18:52:03 2020 +0000 (UTC) LOGNAME=kmistry
+Sat Feb 08 18:52:03 2020 +0000 (UTC) USER=kmistry
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_ENDTIME=1581191466
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_PARTSIZE=5
+Sat Feb 08 18:52:03 2020 +0000 (UTC) HOME=/home/kmistry
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_JOBSIZE=5
+Sat Feb 08 18:52:03 2020 +0000 (UTC) COBALT_QUEUE=debug-flat-quad
+Sat Feb 08 18:52:03 2020 +0000 (UTC) 
+Sat Feb 08 18:52:03 2020 +0000 (UTC) Info: stdin received from /dev/null
+Sat Feb 08 18:52:03 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/408432.output
+Sat Feb 08 18:52:03 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/408432.error
+Sat Feb 08 18:52:03 2020 +0000 (UTC) 
+Sat Feb 08 19:43:54 2020 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal

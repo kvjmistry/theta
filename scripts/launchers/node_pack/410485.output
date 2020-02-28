@@ -1,0 +1,10 @@
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=node_pack_32 --time-limit-min=58
+Application 19169173 exit signals: Terminated
+Application 19169173 resources: utime ~8s, stime ~28s, Rss ~24444, inblocks ~95386, outblocks ~0

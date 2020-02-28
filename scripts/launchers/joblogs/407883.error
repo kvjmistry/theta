@@ -1,0 +1,755 @@
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
++ module unload trackdeps
+++ /opt/cray/pe/modules/3.2.11.3/bin/modulecmd bash unload trackdeps
++ eval LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich/7.7.10:nompirun/nompirun:darshan/3.1.5:xalt ';export' 'LOADEDMODULES;PATH=/opt/xalt/bin:/soft/perftools/darshan/darshan-3.1.5/bin:/opt/modulefiles/nompirun/bin:/opt/cray/pe/mpt/7.7.10/gni/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin' ';export' 'PATH;_LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich/7.7.10:/opt/modulefiles/nompirun/nompirun:/soft/environment/modules/modulefiles/darshan/3.1.5:/soft/environment/modules/modulefiles/xalt' ';export' '_LMFILES_;unset' 'LD_PRELOAD;unset' 'TRACKDEPS_CMDS;unset' 'TRACKDEPS_LOG_PATH;'
+++ LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich/7.7.10:nompirun/nompirun:darshan/3.1.5:xalt
+++ export LOADEDMODULES
+++ PATH=/opt/xalt/bin:/soft/perftools/darshan/darshan-3.1.5/bin:/opt/modulefiles/nompirun/bin:/opt/cray/pe/mpt/7.7.10/gni/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin
+++ export PATH
+++ _LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich/7.7.10:/opt/modulefiles/nompirun/nompirun:/soft/environment/modules/modulefiles/darshan/3.1.5:/soft/environment/modules/modulefiles/xalt
+++ export _LMFILES_
+++ unset LD_PRELOAD
+++ unset TRACKDEPS_CMDS
+++ unset TRACKDEPS_LOG_PATH
++ module unload darshan
+++ /opt/cray/pe/modules/3.2.11.3/bin/modulecmd bash unload darshan
++ eval LD_LIBRARY_PATH=/opt/cray/pe/papi/5.6.0.5/lib64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/lib/intel64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/compiler/lib/intel64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/lib/intel64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/lib/intel64/gcc4.7:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/lib/intel64:/dbhome/db2cat/sqllib/lib64:/dbhome/db2cat/sqllib/lib64/gskit:/dbhome/db2cat/sqllib/lib32 ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich/7.7.10:nompirun/nompirun:xalt' ';export' 'LOADEDMODULES;PATH=/opt/xalt/bin:/opt/modulefiles/nompirun/bin:/opt/cray/pe/mpt/7.7.10/gni/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin' ';export' 'PATH;PE_PKGCONFIG_LIBS=mpich:cray-rca:AtpSigHandler:libsci_mpi:libsci' ';export' 'PE_PKGCONFIG_LIBS;PKG_CONFIG_PATH=/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64/pkgconfig:/opt/cray/pe/pmi/5.0.14/lib64/pkgconfig:/opt/cray/pe/craype/2.6.1/pkg-config:/opt/cray/pe/iobuf/2.0.9/lib/pkgconfig:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64/pkgconfig:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/pkgconfig:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64/pkgconfig:/opt/cray/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari/lib64/pkgconfig:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/pkgconfig:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/pkgconfig:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64/pkgconfig:/opt/cray/pe/atp/2.1.3/lib/pkgconfig' ';export' 'PKG_CONFIG_PATH;_LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich/7.7.10:/opt/modulefiles/nompirun/nompirun:/soft/environment/modules/modulefiles/xalt' ';export' '_LMFILES_;unset' 'DARSHAN_PRELOAD;'
+++ LD_LIBRARY_PATH=/opt/cray/pe/papi/5.6.0.5/lib64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/lib/intel64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/compiler/lib/intel64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/lib/intel64:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/lib/intel64/gcc4.7:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/lib/intel64:/dbhome/db2cat/sqllib/lib64:/dbhome/db2cat/sqllib/lib64/gskit:/dbhome/db2cat/sqllib/lib32
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich/7.7.10:nompirun/nompirun:xalt
+++ export LOADEDMODULES
+++ PATH=/opt/xalt/bin:/opt/modulefiles/nompirun/bin:/opt/cray/pe/mpt/7.7.10/gni/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin
+++ export PATH
+++ PE_PKGCONFIG_LIBS=mpich:cray-rca:AtpSigHandler:libsci_mpi:libsci
+++ export PE_PKGCONFIG_LIBS
+++ PKG_CONFIG_PATH=/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64/pkgconfig:/opt/cray/pe/pmi/5.0.14/lib64/pkgconfig:/opt/cray/pe/craype/2.6.1/pkg-config:/opt/cray/pe/iobuf/2.0.9/lib/pkgconfig:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64/pkgconfig:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/pkgconfig:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64/pkgconfig:/opt/cray/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari/lib64/pkgconfig:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/pkgconfig:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/pkgconfig:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64/pkgconfig:/opt/cray/pe/atp/2.1.3/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ _LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich/7.7.10:/opt/modulefiles/nompirun/nompirun:/soft/environment/modules/modulefiles/xalt
+++ export _LMFILES_
+++ unset DARSHAN_PRELOAD
++ module unload xalt
+++ /opt/cray/pe/modules/3.2.11.3/bin/modulecmd bash unload xalt
++ eval LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich/7.7.10:nompirun/nompirun ';export' 'LOADEDMODULES;PATH=/opt/modulefiles/nompirun/bin:/opt/cray/pe/mpt/7.7.10/gni/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin' ';export' 'PATH;_LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich/7.7.10:/opt/modulefiles/nompirun/nompirun' ';export' '_LMFILES_;unset' 'COMPILER_PATH;'
+++ LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich/7.7.10:nompirun/nompirun
+++ export LOADEDMODULES
+++ PATH=/opt/modulefiles/nompirun/bin:/opt/cray/pe/mpt/7.7.10/gni/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin
+++ export PATH
+++ _LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich/7.7.10:/opt/modulefiles/nompirun/nompirun
+++ export _LMFILES_
+++ unset COMPILER_PATH
++ export MPICH_GNI_FORK_MODE=PARTCOPY
++ MPICH_GNI_FORK_MODE=PARTCOPY
++ export PMI_NO_FORK=1
++ PMI_NO_FORK=1
++ export SINGULARITYENV_HOME=/lus/theta-fs0/projects/uboone
++ SINGULARITYENV_HOME=/lus/theta-fs0/projects/uboone
++ module switch cray-mpich/7.7.10 cray-mpich-abi
+++ /opt/cray/pe/modules/3.2.11.3/bin/modulecmd bash switch cray-mpich/7.7.10 cray-mpich-abi
++ eval CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/INTEL/16.0/x86_64/lib:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64 ';export' 'CRAY_LD_LIBRARY_PATH;CRAY_MPICH2_DIR=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0' ';export' 'CRAY_MPICH2_DIR;CRAY_MPICH2_VER=7.7.10' ';export' 'CRAY_MPICH2_VER;CRAY_MPICH_BASEDIR=/opt/cray/pe/mpt/7.7.10/gni' ';export' 'CRAY_MPICH_BASEDIR;CRAY_MPICH_DIR=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0' ';export' 'CRAY_MPICH_DIR;CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpt/7.7.10' ';export' 'CRAY_MPICH_ROOTDIR;LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich-abi/7.7.10:nompirun/nompirun' ';export' 'LOADEDMODULES;MANPATH=/opt/cray/pe/mpt/7.7.10/gni/man/mpich:/opt/cray/pe/perftools/7.0.5/man:/opt/cray/pe/papi/5.6.0.5/share/pdoc/man:/opt/cray/pe/atp/2.1.3/man:/opt/cray/pe/pmi/5.0.14/man:/opt/cray/pe/libsci/19.06.1/man:/opt/cray/pe/man/csmlversion:/opt/cray/pe/craype/2.6.1/man:/theta-archive/intel/documentation_2019/en/man:/theta-archive/intel/documentation_2019/en/man/common:/theta-archive/intel/documentation_2019/en/debugger/gdb-ia/man:/theta-archive/intel/inspector_2019.2.0.588057/man:/theta-archive/intel/clck/2019.2/man:/theta-archive/intel/advisor_2019.2.0.588361/man:/theta-archive/intel/itac/2019.2.026/man:/opt/cray/cfgutils/man:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/man:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/man:/opt/cray/pe/modules/3.2.11.3/share/man:/usr/local/man:/usr/share/man:/usr/man:/opt/cray/share/man:/opt/cray/pe/man' ';export' 'MANPATH;MPICH_DIR=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0' ';export' 'MPICH_DIR;PATH=/opt/modulefiles/nompirun/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin' ';export' 'PATH;PE_MPICH_MODULE_NAME=cray-mpich-abi' ';export' 'PE_MPICH_MODULE_NAME;PE_PKGCONFIG_LIBS=cray-rca:AtpSigHandler:libsci_mpi:libsci' ';export' 'PE_PKGCONFIG_LIBS;PE_PKGCONFIG_PRODUCTS=PE_LIBSCI' ';export' 'PE_PKGCONFIG_PRODUCTS;_LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich-abi/7.7.10:/opt/modulefiles/nompirun/nompirun' ';export' '_LMFILES_;unset' 'ALLINEA_QUEUE_DLL;unset' 'PE_CXX_PKGCONFIG_LIBS;unset' 'PE_FORTRAN_PKGCONFIG_LIBS;unset' 'PE_INTEL_FIXED_PKGCONFIG_PATH;unset' 'PE_MPICH_ALTERNATE_LIBS_dpm;unset' 'PE_MPICH_ALTERNATE_LIBS_multithreaded;unset' 'PE_MPICH_CXX_PKGCONFIG_LIBS;unset' 'PE_MPICH_DIR_CRAYCLANG_DEFAULT64;unset' 'PE_MPICH_DIR_CRAY_DEFAULT64;unset' 'PE_MPICH_FIXED_PRGENV;unset' 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;unset' 'PE_MPICH_GENCOMPILERS_CRAY;unset' 'PE_MPICH_GENCOMPILERS_CRAYCLANG;unset' 'PE_MPICH_GENCOMPILERS_GNU;unset' 'PE_MPICH_GENCOMPS_CRAY;unset' 'PE_MPICH_GENCOMPS_CRAYCLANG;unset' 'PE_MPICH_GENCOMPS_GNU;unset' 'PE_MPICH_NV_LIBS;unset' 'PE_MPICH_NV_LIBS_nvidia20;unset' 'PE_MPICH_NV_LIBS_nvidia35;unset' 'PE_MPICH_NV_LIBS_nvidia60;unset' 'PE_MPICH_PKGCONFIG_LIBS;unset' 'PE_MPICH_PKGCONFIG_VARIABLES;unset' 'PE_MPICH_TARGET_VAR_nvidia20;unset' 'PE_MPICH_TARGET_VAR_nvidia35;unset' 'PE_MPICH_VOLATILE_PKGCONFIG_PATH;unset' 'PE_MPICH_VOLATILE_PRGENV;'
+++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/INTEL/16.0/x86_64/lib:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64
+++ export CRAY_LD_LIBRARY_PATH
+++ CRAY_MPICH2_DIR=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0
+++ export CRAY_MPICH2_DIR
+++ CRAY_MPICH2_VER=7.7.10
+++ export CRAY_MPICH2_VER
+++ CRAY_MPICH_BASEDIR=/opt/cray/pe/mpt/7.7.10/gni
+++ export CRAY_MPICH_BASEDIR
+++ CRAY_MPICH_DIR=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0
+++ export CRAY_MPICH_DIR
+++ CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpt/7.7.10
+++ export CRAY_MPICH_ROOTDIR
+++ LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:intel/19.0.5.281:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:perftools-base/7.0.5:PrgEnv-intel/6.0.5:craype-mic-knl:cray-mpich-abi/7.7.10:nompirun/nompirun
+++ export LOADEDMODULES
+++ MANPATH=/opt/cray/pe/mpt/7.7.10/gni/man/mpich:/opt/cray/pe/perftools/7.0.5/man:/opt/cray/pe/papi/5.6.0.5/share/pdoc/man:/opt/cray/pe/atp/2.1.3/man:/opt/cray/pe/pmi/5.0.14/man:/opt/cray/pe/libsci/19.06.1/man:/opt/cray/pe/man/csmlversion:/opt/cray/pe/craype/2.6.1/man:/theta-archive/intel/documentation_2019/en/man:/theta-archive/intel/documentation_2019/en/man/common:/theta-archive/intel/documentation_2019/en/debugger/gdb-ia/man:/theta-archive/intel/inspector_2019.2.0.588057/man:/theta-archive/intel/clck/2019.2/man:/theta-archive/intel/advisor_2019.2.0.588361/man:/theta-archive/intel/itac/2019.2.026/man:/opt/cray/cfgutils/man:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/man:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/man:/opt/cray/pe/modules/3.2.11.3/share/man:/usr/local/man:/usr/share/man:/usr/man:/opt/cray/share/man:/opt/cray/pe/man
+++ export MANPATH
+++ MPICH_DIR=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0
+++ export MPICH_DIR
+++ PATH=/opt/modulefiles/nompirun/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/pe/craype/2.6.1/bin:/theta-archive/intel/bin:/theta-archive/intel/debugger_2019/bin:/theta-archive/intel/debugger_2019/gdb/targets/intel64/linux/bin:/theta-archive/intel/debugger_2019/gdb/intel64/bin:/theta-archive/intel/compilers_and_libraries_2019/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/daal/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/mkl/benchmarks/hpcg/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/pstl/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/tbb/bin:/theta-archive/intel/compilers_and_libraries_2019.5.281/linux/ipp/bin:/theta-archive/intel/inspector_2019.2.0.588057/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/bin64:/theta-archive/intel/vtune_amplifier_2019.2.0.588069/backend/bin64:/theta-archive/intel/advisor_2019.2.0.588361/bin64:/theta-archive/intel/parallel_studio_xe_2019.2.057/bin:/theta-archive/intel/itac/2019.2.026/intel64/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin
+++ export PATH
+++ PE_MPICH_MODULE_NAME=cray-mpich-abi
+++ export PE_MPICH_MODULE_NAME
+++ PE_PKGCONFIG_LIBS=cray-rca:AtpSigHandler:libsci_mpi:libsci
+++ export PE_PKGCONFIG_LIBS
+++ PE_PKGCONFIG_PRODUCTS=PE_LIBSCI
+++ export PE_PKGCONFIG_PRODUCTS
+++ _LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/modulefiles/intel/19.0.5.281:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.5:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/modulefiles/cray-mpich-abi/7.7.10:/opt/modulefiles/nompirun/nompirun
+++ export _LMFILES_
+++ unset ALLINEA_QUEUE_DLL
+++ unset PE_CXX_PKGCONFIG_LIBS
+++ unset PE_FORTRAN_PKGCONFIG_LIBS
+++ unset PE_INTEL_FIXED_PKGCONFIG_PATH
+++ unset PE_MPICH_ALTERNATE_LIBS_dpm
+++ unset PE_MPICH_ALTERNATE_LIBS_multithreaded
+++ unset PE_MPICH_CXX_PKGCONFIG_LIBS
+++ unset PE_MPICH_DIR_CRAYCLANG_DEFAULT64
+++ unset PE_MPICH_DIR_CRAY_DEFAULT64
+++ unset PE_MPICH_FIXED_PRGENV
+++ unset PE_MPICH_FORTRAN_PKGCONFIG_LIBS
+++ unset PE_MPICH_GENCOMPILERS_CRAY
+++ unset PE_MPICH_GENCOMPILERS_CRAYCLANG
+++ unset PE_MPICH_GENCOMPILERS_GNU
+++ unset PE_MPICH_GENCOMPS_CRAY
+++ unset PE_MPICH_GENCOMPS_CRAYCLANG
+++ unset PE_MPICH_GENCOMPS_GNU
+++ unset PE_MPICH_NV_LIBS
+++ unset PE_MPICH_NV_LIBS_nvidia20
+++ unset PE_MPICH_NV_LIBS_nvidia35
+++ unset PE_MPICH_NV_LIBS_nvidia60
+++ unset PE_MPICH_PKGCONFIG_LIBS
+++ unset PE_MPICH_PKGCONFIG_VARIABLES
+++ unset PE_MPICH_TARGET_VAR_nvidia20
+++ unset PE_MPICH_TARGET_VAR_nvidia35
+++ unset PE_MPICH_VOLATILE_PKGCONFIG_PATH
+++ unset PE_MPICH_VOLATILE_PRGENV
++ module switch PrgEnv-intel/6.0.5 PrgEnv-cray
+++ /opt/cray/pe/modules/3.2.11.3/bin/modulecmd bash switch PrgEnv-intel/6.0.5 PrgEnv-cray
++ eval APP2_STATE=7.0.5 ';export' 'APP2_STATE;ASSEMBLER_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/as' ';export' 'ASSEMBLER_AARCH64;ASSEMBLER_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/bin/as' ';export' 'ASSEMBLER_X86_64;ATP_HOME=/opt/cray/pe/atp/2.1.3' ';export' 'ATP_HOME;ATP_IGNORE_SIGTERM=1' ';export' 'ATP_IGNORE_SIGTERM;ATP_MRNET_COMM_PATH=/opt/cray/pe/atp/2.1.3/libexec/atp_mrnet_commnode_wrapper' ';export' 'ATP_MRNET_COMM_PATH;ATP_POST_LINK_OPTS=-Wl,-L/opt/cray/pe/atp/2.1.3/libApp/\' ';export' 'ATP_POST_LINK_OPTS;CC_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64' ';export' 'CC_X86_64;CHPL_CG_CPP_LINES=1' ';export' 'CHPL_CG_CPP_LINES;CLASSPATH=/dbhome/db2cat/sqllib/java/db2java.zip:/dbhome/db2cat/sqllib/java/sqlj.zip:/dbhome/db2cat/sqllib/function:/dbhome/db2cat/sqllib/java/db2jcc_license_cu.jar:/dbhome/db2cat/sqllib/tools/clpplus.jar:/dbhome/db2cat/sqllib/tools/jline-0.9.93.jar:/dbhome/db2cat/sqllib/java/db2jcc.jar:.' ';export' 'CLASSPATH;COMPILERRT_PATH_X86_64=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/lib/clang/9.0.0/lib/linux' ';export' 'COMPILERRT_PATH_X86_64;CRAYLIBS_AARCH64=/opt/cray/pe/cce/9.0.2/cce/aarch64/lib' ';export' 'CRAYLIBS_AARCH64;CRAYLIBS_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64/lib' ';export' 'CRAYLIBS_X86_64;CRAYLMD_LICENSE_FILE=/opt/cray/pe/cce/cce.lic' ';export' 'CRAYLMD_LICENSE_FILE;CRAYPAT_ALPS_COMPONENT=/opt/cray/pe/perftools/7.0.5/sbin/pat_alps' ';export' 'CRAYPAT_ALPS_COMPONENT;CRAYPAT_LD_LIBRARY_PATH=/opt/cray/pe/gcc-libs:/opt/cray/gcc-libs:/opt/cray/pe/perftools/7.0.5/lib64' ';export' 'CRAYPAT_LD_LIBRARY_PATH;CRAYPAT_OPTS_EXECUTABLE=sbin/pat-opts' ';export' 'CRAYPAT_OPTS_EXECUTABLE;CRAYPAT_ROOT=/opt/cray/pe/perftools/7.0.5' ';export' 'CRAYPAT_ROOT;CRAYPE_DIR=/opt/cray/pe/craype/2.6.1' ';export' 'CRAYPE_DIR;CRAYPE_NETWORK_TARGET=aries' ';export' 'CRAYPE_NETWORK_TARGET;CRAYPE_VERSION=2.6.1' ';export' 'CRAYPE_VERSION;CRAY_BINUTILS_BIN=/opt/cray/pe/cce/9.0.2/binutils/x86_64/bin' ';export' 'CRAY_BINUTILS_BIN;CRAY_BINUTILS_BIN_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin' ';export' 'CRAY_BINUTILS_BIN_AARCH64;CRAY_BINUTILS_BIN_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/bin' ';export' 'CRAY_BINUTILS_BIN_X86_64;CRAY_BINUTILS_ROOT=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/../' ';export' 'CRAY_BINUTILS_ROOT;CRAY_BINUTILS_ROOT_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../' ';export' 'CRAY_BINUTILS_ROOT_AARCH64;CRAY_BINUTILS_ROOT_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/../' ';export' 'CRAY_BINUTILS_ROOT_X86_64;CRAY_BINUTILS_VERSION=/opt/cray/pe/cce/9.0.2' ';export' 'CRAY_BINUTILS_VERSION;CRAY_CCE_CLANGSHARE=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/share' ';export' 'CRAY_CCE_CLANGSHARE;CRAY_CCE_SHARE=/opt/cray/pe/cce/9.0.2/cce/x86_64/share' ';export' 'CRAY_CCE_SHARE;CRAY_CC_VERSION=9.0.2' ';export' 'CRAY_CC_VERSION;CRAY_CPU_TARGET=mic-knl' ';export' 'CRAY_CPU_TARGET;CRAY_CXX_IPA_LIBS=/opt/cray/pe/cce/9.0.2/cce/x86_64/lib/libcray-c++-rts.a' ';export' 'CRAY_CXX_IPA_LIBS;CRAY_CXX_IPA_LIBS_AARCH64=/opt/cray/pe/cce/9.0.2/cce/aarch64/lib/libcray-c++-rts.a' ';export' 'CRAY_CXX_IPA_LIBS_AARCH64;CRAY_CXX_IPA_LIBS_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64/lib/libcray-c++-rts.a' ';export' 'CRAY_CXX_IPA_LIBS_X86_64;CRAY_FTN_VERSION=9.0.2' ';export' 'CRAY_FTN_VERSION;CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/CRAYCLANG/9.0/x86_64/lib:/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/lib:/opt/cray/pe/cce/9.0.2/cce/x86_64/lib:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64' ';export' 'CRAY_LD_LIBRARY_PATH;CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/19.06.1' ';export' 'CRAY_LIBSCI_BASE_DIR;CRAY_LIBSCI_DIR=/opt/cray/pe/libsci/19.06.1' ';export' 'CRAY_LIBSCI_DIR;CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/19.06.1/CRAYCLANG/9.0/x86_64' ';export' 'CRAY_LIBSCI_PREFIX_DIR;CRAY_LIBSCI_VERSION=19.06.1' ';export' 'CRAY_LIBSCI_VERSION;CRAY_PE_CCE_VARIANT=CC=Clang:FTN=Classic' ';export' 'CRAY_PE_CCE_VARIANT;CRAY_PE_USE_CLANG=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/bin/clang' ';export' 'CRAY_PE_USE_CLANG;CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/5.0.14/include' ';export' 'CRAY_PMI_INCLUDE_OPTS;CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/5.0.14/lib64' ';export' 'CRAY_PMI_POST_LINK_OPTS;CRAY_PRE_COMPILE_OPTS=-hnetwork=aries' ';export' 'CRAY_PRE_COMPILE_OPTS;CRAY_PRGENVCRAY=loaded' ';export' 'CRAY_PRGENVCRAY;CRAY_RCA_INCLUDE_OPTS=-I/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/include\' '-I/opt/cray/krca/2.2.4-6.0.7.1_5.48__g8505b97.ari/include\' '-I/opt/cray-hss-devel/8.0.0/include\' ';export' 'CRAY_RCA_INCLUDE_OPTS;CRAY_RCA_POST_LINK_OPTS=-L/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64\' '-lrca\' ';export' 'CRAY_RCA_POST_LINK_OPTS;DMAPP_ABORT_ON_ERROR=1' ';export' 'DMAPP_ABORT_ON_ERROR;FORTRAN_SYSTEM_MODULE_NAMES=ftn_lib_definitions' ';export' 'FORTRAN_SYSTEM_MODULE_NAMES;FTN_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64' ';export' 'FTN_X86_64;GCC_AARCH64=/opt/gcc-cross-aarch64/8.1.0/aarch64' ';export' 'GCC_AARCH64;GCC_X86_64=/opt/gcc/8.1.0/snos' ';export' 'GCC_X86_64;INCLUDE_PATH_AARCH64=/opt/cray/pe/cce/9.0.2/cce/aarch64/include/craylibs' ';export' 'INCLUDE_PATH_AARCH64;INCLUDE_PATH_X86_64=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/lib/clang/9.0.0/include:/opt/cray/pe/cce/9.0.2/cce/x86_64/include/craylibs' ';export' 'INCLUDE_PATH_X86_64;LD_LIBRARY_PATH=/opt/cray/pe/papi/5.6.0.5/lib64:/dbhome/db2cat/sqllib/lib64:/dbhome/db2cat/sqllib/lib64/gskit:/dbhome/db2cat/sqllib/lib32' ';export' 'LD_LIBRARY_PATH;LIBSCI_BASE_DIR=/opt/cray/pe/libsci/19.06.1' ';export' 'LIBSCI_BASE_DIR;LIBSCI_VERSION=19.06.1' ';export' 'LIBSCI_VERSION;LINKER_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/ld' ';export' 'LINKER_AARCH64;LINKER_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/bin/ld' ';export' 'LINKER_X86_64;LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:cce/9.0.2:craype-mic-knl:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:perftools-base/7.0.5:PrgEnv-cray/6.0.5:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:cray-mpich-abi/7.7.10:nompirun/nompirun' ';export' 'LOADEDMODULES;MANPATH=/opt/cray/pe/mpt/7.7.10/gni/man/mpich:/opt/cray/pe/perftools/7.0.5/man:/opt/cray/pe/papi/5.6.0.5/share/pdoc/man:/opt/cray/pe/atp/2.1.3/man:/opt/cray/pe/pmi/5.0.14/man:/opt/cray/pe/libsci/19.06.1/man:/opt/cray/pe/man/csmlversion:/opt/cray/pe/craype/2.6.1/man:/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/share/man:/opt/cray/pe/cce/9.0.2/man:/opt/cray/cfgutils/man:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/man:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/man:/opt/cray/pe/modules/3.2.11.3/share/man:/usr/local/man:/usr/share/man:/usr/man:/opt/cray/share/man:/opt/cray/pe/man' ';export' 'MANPATH;MODULEPATH=/opt/cray/pe/perftools/7.0.5/modulefiles:/opt/cray/pe/craype/2.6.1/modulefiles:/opt/cray/ari/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/soft/environment/modules/modulefiles:/opt/cray/craype/default/modulefiles' ';export' 'MODULEPATH;MPICH_ABORT_ON_ERROR=1' ';export' 'MPICH_ABORT_ON_ERROR;NLSPATH=/opt/cray/pe/cce/9.0.2/cce/x86_64/share/nls/En/%N.cat' ';export' 'NLSPATH;OFFLOAD_INIT=on_start' ';export' 'OFFLOAD_INIT;PATH=/opt/modulefiles/nompirun/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/pe/craype/2.6.1/bin:/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/bin:/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/bin:/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../bin:/opt/cray/pe/cce/9.0.2/utils/x86_64/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin' ';export' 'PATH;PAT_BUILD_PAPI_BASEDIR=/opt/cray/pe/papi/5.6.0.5' ';export' 'PAT_BUILD_PAPI_BASEDIR;PAT_REPORT_PRUNE_NAME=_cray\$mt_execute_,_cray\$mt_start_,__cray_hwpc_,f_cray_hwpc_,cstart,__pat_,pat_region_,PAT_,OMP.slave_loop,slave_entry,_new_slave_entry,_thread_pool_slave_entry,THREAD_POOL_join,__libc_start_main,_start,__start,start_thread,__wrap_,UPC_ADIO_,_upc_,upc_,__caf_,__pgas_,syscall,__device_stub' ';export' 'PAT_REPORT_PRUNE_NAME;PERFTOOLS_VERSION=7.0.5' ';export' 'PERFTOOLS_VERSION;PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.6.3.1/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.5.1/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.5.1/CRAYCLANG/9.0/lib/pkgconfig' ';export' 'PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH;PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.6.3.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.5.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.5.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/ga/5.3.0.10/CRAY/8.6/lib/pkgconfig' ';export' 'PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH;PE_ENV=CRAY' ';export' 'PE_ENV;PE_FFTW_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH' ';export' 'PE_FFTW_DEFAULT_REQUIRED_PRODUCTS;PE_FFTW_DEFAULT_TARGET_abudhabi=abudhabi' ';export' 'PE_FFTW_DEFAULT_TARGET_abudhabi;PE_FFTW_DEFAULT_TARGET_broadwell=broadwell' ';export' 'PE_FFTW_DEFAULT_TARGET_broadwell;PE_FFTW_DEFAULT_TARGET_haswell=haswell' ';export' 'PE_FFTW_DEFAULT_TARGET_haswell;PE_FFTW_DEFAULT_TARGET_interlagos=interlagos' ';export' 'PE_FFTW_DEFAULT_TARGET_interlagos;PE_FFTW_DEFAULT_TARGET_ivybridge=ivybridge' ';export' 'PE_FFTW_DEFAULT_TARGET_ivybridge;PE_FFTW_DEFAULT_TARGET_mic_knl=mic_knl' ';export' 'PE_FFTW_DEFAULT_TARGET_mic_knl;PE_FFTW_DEFAULT_TARGET_sandybridge=sandybridge' ';export' 'PE_FFTW_DEFAULT_TARGET_sandybridge;PE_FFTW_DEFAULT_TARGET_share=share' ';export' 'PE_FFTW_DEFAULT_TARGET_share;PE_FFTW_DEFAULT_TARGET_x86_64=x86_64' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_64;PE_FFTW_DEFAULT_TARGET_x86_skylake=x86_skylake' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_skylake;PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/fftw/3.3.8.3/@PE_FFTW_DEFAULT_TARGET@/lib/pkgconfig' ';export' 'PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_GA_DEFAULT_FIXED_PRGENV=CRAY\' INTEL ';export' 'PE_GA_DEFAULT_FIXED_PRGENV;PE_GA_DEFAULT_GENCOMPILERS_GNU=8.2\' 7.3 ';export' 'PE_GA_DEFAULT_GENCOMPILERS_GNU;PE_GA_DEFAULT_GENCOMPS_GNU=82\' 73 ';export' 'PE_GA_DEFAULT_GENCOMPS_GNU;PE_GA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/ga/5.3.0.10/@PRGENV@/@PE_GA_DEFAULT_GENCOMPS@/lib/pkgconfig' ';export' 'PE_GA_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_GA_DEFAULT_VOLATILE_PRGENV=GNU' ';export' 'PE_GA_DEFAULT_VOLATILE_PRGENV;PE_HDF5_DEFAULT_FIXED_PRGENV=CRAY\' 'CRAYCLANG\' INTEL ';export' 'PE_HDF5_DEFAULT_FIXED_PRGENV;PE_HDF5_DEFAULT_GENCOMPILERS_GNU=8.2\' 7.1 ';export' 'PE_HDF5_DEFAULT_GENCOMPILERS_GNU;PE_HDF5_DEFAULT_GENCOMPS_GNU=' ';export' 'PE_HDF5_DEFAULT_GENCOMPS_GNU;PE_HDF5_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH' ';export' 'PE_HDF5_DEFAULT_REQUIRED_PRODUCTS;PE_HDF5_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/hdf5/1.10.5.1/@PRGENV@/@PE_HDF5_DEFAULT_GENCOMPS@/lib/pkgconfig' ';export' 'PE_HDF5_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_HDF5_DEFAULT_VOLATILE_PRGENV=GNU' ';export' 'PE_HDF5_DEFAULT_VOLATILE_PRGENV;PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV=CRAY\' 'CRAYCLANG\' INTEL ';export' 'PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV;PE_HDF5_PARALLEL_DEFAULT_GENCOMPILERS_GNU=8.2\' 7.1 ';export' 'PE_HDF5_PARALLEL_DEFAULT_GENCOMPILERS_GNU;PE_HDF5_PARALLEL_DEFAULT_GENCOMPS_GNU=' ';export' 'PE_HDF5_PARALLEL_DEFAULT_GENCOMPS_GNU;PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH' ';export' 'PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS;PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/hdf5-parallel/1.10.5.1/@PRGENV@/@PE_HDF5_PARALLEL_DEFAULT_GENCOMPS@/lib/pkgconfig' ';export' 'PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PRGENV=GNU' ';export' 'PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PRGENV;PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.6.3.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/mpt/7.7.10/gni/mpich-INTEL/16.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.5.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.5.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/ga/5.3.0.10/INTEL/18.0/lib/pkgconfig' ';export' 'PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH;PE_LEVEL=9.0' ';export' 'PE_LEVEL;PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64=8.1\' 7.1 ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64=16.0' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64=90' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64=81\' 71 ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64=160' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64;PE_LIBSCI_DEFAULT_OMP_REQUIRES=' ';export' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES;PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp=_mp' ';export' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp;PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES=PE_LIBSCI_DEFAULT_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME' ';export' 'PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES;PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH' ';export' 'PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS;PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/19.06.1/@PRGENV@/@PE_LIBSCI_DEFAULT_GENCOMPS@/@PE_LIBSCI_DEFAULT_TARGET@/lib/pkgconfig' ';export' 'PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_LIBSCI_DEFAULT_VOLATILE_PRGENV=CRAY\' 'CRAYCLANG\' 'GNU\' INTEL ';export' 'PE_LIBSCI_DEFAULT_VOLATILE_PRGENV;PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64=9.0' ';export' 'PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64;PE_LIBSCI_GENCOMPILERS_CRAY_x86_64=9.0' ';export' 'PE_LIBSCI_GENCOMPILERS_CRAY_x86_64;PE_LIBSCI_GENCOMPILERS_GNU_x86_64=8.1\' 7.1 ';export' 'PE_LIBSCI_GENCOMPILERS_GNU_x86_64;PE_LIBSCI_GENCOMPILERS_INTEL_x86_64=16.0' ';export' 'PE_LIBSCI_GENCOMPILERS_INTEL_x86_64;PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64=90' ';export' 'PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64;PE_LIBSCI_GENCOMPS_CRAY_x86_64=90' ';export' 'PE_LIBSCI_GENCOMPS_CRAY_x86_64;PE_LIBSCI_GENCOMPS_GNU_x86_64=81\' 71 ';export' 'PE_LIBSCI_GENCOMPS_GNU_x86_64;PE_LIBSCI_GENCOMPS_INTEL_x86_64=160' ';export' 'PE_LIBSCI_GENCOMPS_INTEL_x86_64;PE_LIBSCI_MODULE_NAME=cray-libsci/19.06.1' ';export' 'PE_LIBSCI_MODULE_NAME;PE_LIBSCI_OMP_REQUIRES=' ';export' 'PE_LIBSCI_OMP_REQUIRES;PE_LIBSCI_OMP_REQUIRES_openmp=_mp' ';export' 'PE_LIBSCI_OMP_REQUIRES_openmp;PE_LIBSCI_PKGCONFIG_LIBS=libsci_mpi:libsci' ';export' 'PE_LIBSCI_PKGCONFIG_LIBS;PE_LIBSCI_PKGCONFIG_VARIABLES=PE_LIBSCI_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME' ';export' 'PE_LIBSCI_PKGCONFIG_VARIABLES;PE_LIBSCI_REQUIRED_PRODUCTS=PE_MPICH' ';export' 'PE_LIBSCI_REQUIRED_PRODUCTS;PE_LIBSCI_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/19.06.1/@PRGENV@/@PE_LIBSCI_GENCOMPS@/@PE_LIBSCI_TARGET@/lib/pkgconfig' ';export' 'PE_LIBSCI_VOLATILE_PKGCONFIG_PATH;PE_LIBSCI_VOLATILE_PRGENV=CRAY\' 'CRAYCLANG\' 'GNU\' INTEL ';export' 'PE_LIBSCI_VOLATILE_PRGENV;PE_MPICH_ALTERNATE_LIBS_dpm=_dpm' ';export' 'PE_MPICH_ALTERNATE_LIBS_dpm;PE_MPICH_ALTERNATE_LIBS_multithreaded=_mt' ';export' 'PE_MPICH_ALTERNATE_LIBS_multithreaded;PE_MPICH_DEFAULT_DIR_CRAYCLANG_DEFAULT64=64' ';export' 'PE_MPICH_DEFAULT_DIR_CRAYCLANG_DEFAULT64;PE_MPICH_DEFAULT_DIR_CRAY_DEFAULT64=64' ';export' 'PE_MPICH_DEFAULT_DIR_CRAY_DEFAULT64;PE_MPICH_DEFAULT_FIXED_PRGENV=INTEL' ';export' 'PE_MPICH_DEFAULT_FIXED_PRGENV;PE_MPICH_DEFAULT_GENCOMPILERS_CRAY=9.0' ';export' 'PE_MPICH_DEFAULT_GENCOMPILERS_CRAY;PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG=9.0' ';export' 'PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG;PE_MPICH_DEFAULT_GENCOMPILERS_GNU=8.2\' '8.1\' 7.1 ';export' 'PE_MPICH_DEFAULT_GENCOMPILERS_GNU;PE_MPICH_DEFAULT_GENCOMPS_CRAY=90' ';export' 'PE_MPICH_DEFAULT_GENCOMPS_CRAY;PE_MPICH_DEFAULT_GENCOMPS_CRAYCLANG=90' ';export' 'PE_MPICH_DEFAULT_GENCOMPS_CRAYCLANG;PE_MPICH_DEFAULT_GENCOMPS_GNU=82\' '81\' 71 ';export' 'PE_MPICH_DEFAULT_GENCOMPS_GNU;PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.7.10/gni/mpich-@PRGENV@@PE_MPICH_DEFAULT_DIR_DEFAULT64@/@PE_MPICH_DEFAULT_GENCOMPS@/lib/pkgconfig' ';export' 'PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_MPICH_DEFAULT_VOLATILE_PRGENV=GNU\' 'CRAYCLANG\' CRAY ';export' 'PE_MPICH_DEFAULT_VOLATILE_PRGENV;PE_MPICH_NV_LIBS=' ';export' 'PE_MPICH_NV_LIBS;PE_MPICH_NV_LIBS_nvidia20=-lcudart' ';export' 'PE_MPICH_NV_LIBS_nvidia20;PE_MPICH_NV_LIBS_nvidia35=-lcudart' ';export' 'PE_MPICH_NV_LIBS_nvidia35;PE_MPICH_NV_LIBS_nvidia60=-lcudart' ';export' 'PE_MPICH_NV_LIBS_nvidia60;PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_NV_LIBS_@accelerator@:PE_MPICH_ALTERNATE_LIBS_@multithreaded@:PE_MPICH_ALTERNATE_LIBS_@dpm@' ';export' 'PE_MPICH_PKGCONFIG_VARIABLES;PE_MPICH_TARGET_VAR_nvidia20=-lcudart' ';export' 'PE_MPICH_TARGET_VAR_nvidia20;PE_MPICH_TARGET_VAR_nvidia35=-lcudart' ';export' 'PE_MPICH_TARGET_VAR_nvidia35;PE_NETCDF_DEFAULT_FIXED_PRGENV=CRAY\' 'CRAYCLANG\' INTEL ';export' 'PE_NETCDF_DEFAULT_FIXED_PRGENV;PE_NETCDF_DEFAULT_GENCOMPILERS_GNU=8.2\' 7.1 ';export' 'PE_NETCDF_DEFAULT_GENCOMPILERS_GNU;PE_NETCDF_DEFAULT_GENCOMPS_GNU=' ';export' 'PE_NETCDF_DEFAULT_GENCOMPS_GNU;PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5' ';export' 'PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS;PE_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.6.3.1/@PRGENV@/@PE_NETCDF_DEFAULT_GENCOMPS@/lib/pkgconfig' ';export' 'PE_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_NETCDF_DEFAULT_VOLATILE_PRGENV=GNU' ';export' 'PE_NETCDF_DEFAULT_VOLATILE_PRGENV;PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV=CRAY\' 'CRAYCLANG\' INTEL ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV;PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPILERS_GNU=8.2\' 7.1 ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPILERS_GNU;PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS_GNU=' ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS_GNU;PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5_PARALLEL' ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS;PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/@PRGENV@/@PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS@/lib/pkgconfig' ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PRGENV=GNU' ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PRGENV;PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS=' ';export' 'PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS;PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia=,-lcupti,-lcudart,-lcuda' ';export' 'PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia;PE_PAPI_DEFAULT_ACCEL_LIBS=' ';export' 'PE_PAPI_DEFAULT_ACCEL_LIBS;PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35=,-lcupti,-lcudart,-lcuda' ';export' 'PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35;PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES=PE_PAPI_ACCEL_LIBS_@accelerator@\' PE_PAPI_ACCEL_FAMILY_LIBS_@accelerator_family@ ';export' 'PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES;PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV=CRAY\' 'CRAYCLANG\' INTEL ';export' 'PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV;PE_PARALLEL_NETCDF_DEFAULT_GENCOMPILERS_GNU=8.2\' 7.1 ';export' 'PE_PARALLEL_NETCDF_DEFAULT_GENCOMPILERS_GNU;PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS_GNU=82\' 71 ';export' 'PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS_GNU;PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/@PRGENV@/@PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS@/lib/pkgconfig' ';export' 'PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PRGENV=GNU' ';export' 'PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PRGENV;PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell;PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge;PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64;PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake;PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_haswell=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_haswell;PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_sandybridge=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_sandybridge;PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_64;PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=9.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_skylake;PE_PETSC_DEFAULT_GENCOMPILERS_GNU_haswell=8.2\' 7.1 ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_GNU_haswell;PE_PETSC_DEFAULT_GENCOMPILERS_GNU_sandybridge=8.2\' 7.1 ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_GNU_sandybridge;PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_64=8.2\' 7.1 ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_64;PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_skylake=8.2\' 7.1 ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_skylake;PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_haswell=19.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_haswell;PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_sandybridge=19.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_sandybridge;PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_64;PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=19.0' ';export' 'PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_skylake;PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_haswell=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_haswell;PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge;PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_64;PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake;PE_PETSC_DEFAULT_GENCOMPS_CRAY_haswell=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAY_haswell;PE_PETSC_DEFAULT_GENCOMPS_CRAY_sandybridge=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAY_sandybridge;PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_64=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_64;PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_skylake=90' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_skylake;PE_PETSC_DEFAULT_GENCOMPS_GNU_haswell=82\' 71 ';export' 'PE_PETSC_DEFAULT_GENCOMPS_GNU_haswell;PE_PETSC_DEFAULT_GENCOMPS_GNU_sandybridge=82\' 71 ';export' 'PE_PETSC_DEFAULT_GENCOMPS_GNU_sandybridge;PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_64=82\' 71 ';export' 'PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_64;PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_skylake=82\' 71 ';export' 'PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_skylake;PE_PETSC_DEFAULT_GENCOMPS_INTEL_haswell=190' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_INTEL_haswell;PE_PETSC_DEFAULT_GENCOMPS_INTEL_sandybridge=190' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_INTEL_sandybridge;PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_64=190' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_64;PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_skylake=190' ';export' 'PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_skylake;PE_PETSC_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_TPSL' ';export' 'PE_PETSC_DEFAULT_REQUIRED_PRODUCTS;PE_PETSC_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/petsc/3.11.2.0/complex/@PRGENV@/@PE_PETSC_DEFAULT_GENCOMPS@/@PE_PETSC_DEFAULT_TARGET@/lib/pkgconfig' ';export' 'PE_PETSC_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_PETSC_DEFAULT_VOLATILE_PRGENV=CRAY\' 'CRAY64\' 'CRAYCLANG\' 'CRAYCLANG64\' 'GNU\' 'GNU64\' 'INTEL\' INTEL64 ';export' 'PE_PETSC_DEFAULT_VOLATILE_PRGENV;PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_TRILINOS:PE_TPSL_64:PE_TPSL:PE_PETSC:PE_PARALLEL_NETCDF:PE_NETCDF_HDF5PARALLEL:PE_NETCDF:PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_HDF5:PE_GA:PE_FFTW' ';export' 'PE_PKGCONFIG_DEFAULT_PRODUCTS;PE_PKGCONFIG_LIBS=cray-rca:AtpSigHandler:libsci_mpi:libsci' ';export' 'PE_PKGCONFIG_LIBS;PE_PKGCONFIG_PRODUCTS=PE_LIBSCI' ';export' 'PE_PKGCONFIG_PRODUCTS;PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI' ';export' 'PE_PKGCONFIG_PRODUCTS_DEFAULT;PE_PKG_CONFIG_PATH=/opt/cray/pe/cti/1.0.8/lib/pkgconfig:/opt/cray/pe/cti/1.0.7/lib/pkgconfig:/opt/cray/pe/cti/1.0.6/lib/pkgconfig:/opt/cray/pe/cti/1.0.4/lib/pkgconfig:/opt/cray/pe/cti/1.0.5/lib/pkgconfig' ';export' 'PE_PKG_CONFIG_PATH;PE_PRODUCT_LIST=CRAY_RCA:CRAY_PMI:CRAY_LIBSCI:CRAYPE:CRAYPE_MIC-KNL:CRAY:CRAY_XPMEM:CRAY_DMAPP:CRAY_UGNI:CRAY_UDREG:CRAY_ALPS:PERFTOOLS:CRAYPAT' ';export' 'PE_PRODUCT_LIST;PE_SMA_DEFAULT_COMPFLAG=' ';export' 'PE_SMA_DEFAULT_COMPFLAG;PE_SMA_DEFAULT_COMPFLAG_GNU=-fcray-pointer' ';export' 'PE_SMA_DEFAULT_COMPFLAG_GNU;PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64=64' ';export' 'PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64;PE_SMA_DEFAULT_DIR_PGI_DEFAULT64=64' ';export' 'PE_SMA_DEFAULT_DIR_PGI_DEFAULT64;PE_SMA_DEFAULT_PKGCONFIG_VARIABLES=PE_SMA_COMPFLAG_@prgenv@' ';export' 'PE_SMA_DEFAULT_PKGCONFIG_VARIABLES;PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.7.10/gni/sma@PE_SMA_DEFAULT_DIR_DEFAULT64@/lib64/pkgconfig' ';export' 'PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_haswell=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_haswell;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_sandybridge=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_64;PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=9.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_skylake;PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_haswell=8.2\' 7.1 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_haswell;PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_sandybridge=8.2\' 7.1 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_64=8.2\' 7.1 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_64;PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_skylake=8.2\' 7.1 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_skylake;PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_haswell=19.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_haswell;PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_sandybridge=19.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_64;PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=19.0' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_skylake;PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_haswell=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_haswell;PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_64;PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake;PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_haswell=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_haswell;PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_sandybridge=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_64=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_64;PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_skylake=90' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_skylake;PE_TPSL_64_DEFAULT_GENCOMPS_GNU_haswell=82\' 71 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_GNU_haswell;PE_TPSL_64_DEFAULT_GENCOMPS_GNU_sandybridge=82\' 71 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_GNU_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_64=82\' 71 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_64;PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_skylake=82\' 71 ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_skylake;PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_haswell=190' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_haswell;PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_sandybridge=190' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_sandybridge;PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_64=190' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_64;PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_skylake=190' ';export' 'PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_skylake;PE_TPSL_64_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI' ';export' 'PE_TPSL_64_DEFAULT_REQUIRED_PRODUCTS;PE_TPSL_64_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/tpsl/19.06.1/@PRGENV@64/@PE_TPSL_64_DEFAULT_GENCOMPS@/@PE_TPSL_64_DEFAULT_TARGET@/lib/pkgconfig' ';export' 'PE_TPSL_64_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_TPSL_64_DEFAULT_VOLATILE_PRGENV=CRAY\' 'CRAY64\' 'CRAYCLANG\' 'CRAYCLANG64\' 'GNU\' 'GNU64\' 'INTEL\' INTEL64 ';export' 'PE_TPSL_64_DEFAULT_VOLATILE_PRGENV;PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell;PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge;PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64;PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake;PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_haswell=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_haswell;PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_sandybridge=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_sandybridge;PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_64;PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=9.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_skylake;PE_TPSL_DEFAULT_GENCOMPILERS_GNU_haswell=8.2\' 7.1 ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_GNU_haswell;PE_TPSL_DEFAULT_GENCOMPILERS_GNU_sandybridge=8.2\' 7.1 ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_GNU_sandybridge;PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_64=8.2\' 7.1 ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_64;PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_skylake=8.2\' 7.1 ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_skylake;PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_haswell=19.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_haswell;PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_sandybridge=19.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_sandybridge;PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_64;PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=19.0' ';export' 'PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_skylake;PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_haswell=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_haswell;PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge;PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_64;PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake;PE_TPSL_DEFAULT_GENCOMPS_CRAY_haswell=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAY_haswell;PE_TPSL_DEFAULT_GENCOMPS_CRAY_sandybridge=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAY_sandybridge;PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_64=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_64;PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_skylake=90' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_skylake;PE_TPSL_DEFAULT_GENCOMPS_GNU_haswell=82\' 71 ';export' 'PE_TPSL_DEFAULT_GENCOMPS_GNU_haswell;PE_TPSL_DEFAULT_GENCOMPS_GNU_sandybridge=82\' 71 ';export' 'PE_TPSL_DEFAULT_GENCOMPS_GNU_sandybridge;PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_64=82\' 71 ';export' 'PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_64;PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_skylake=82\' 71 ';export' 'PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_skylake;PE_TPSL_DEFAULT_GENCOMPS_INTEL_haswell=190' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_INTEL_haswell;PE_TPSL_DEFAULT_GENCOMPS_INTEL_sandybridge=190' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_INTEL_sandybridge;PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_64=190' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_64;PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_skylake=190' ';export' 'PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_skylake;PE_TPSL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI' ';export' 'PE_TPSL_DEFAULT_REQUIRED_PRODUCTS;PE_TPSL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/tpsl/19.06.1/@PRGENV@/@PE_TPSL_DEFAULT_GENCOMPS@/@PE_TPSL_DEFAULT_TARGET@/lib/pkgconfig' ';export' 'PE_TPSL_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_TPSL_DEFAULT_VOLATILE_PRGENV=CRAY\' 'CRAY64\' 'CRAYCLANG\' 'CRAYCLANG64\' 'GNU\' 'GNU64\' 'INTEL\' INTEL64 ';export' 'PE_TPSL_DEFAULT_VOLATILE_PRGENV;PE_TRILINOS_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0' ';export' 'PE_TRILINOS_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64;PE_TRILINOS_DEFAULT_GENCOMPILERS_GNU_x86_64=8.2\' 7.1 ';export' 'PE_TRILINOS_DEFAULT_GENCOMPILERS_GNU_x86_64;PE_TRILINOS_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0' ';export' 'PE_TRILINOS_DEFAULT_GENCOMPILERS_INTEL_x86_64;PE_TRILINOS_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90' ';export' 'PE_TRILINOS_DEFAULT_GENCOMPS_CRAYCLANG_x86_64;PE_TRILINOS_DEFAULT_GENCOMPS_GNU_x86_64=82\' 71 ';export' 'PE_TRILINOS_DEFAULT_GENCOMPS_GNU_x86_64;PE_TRILINOS_DEFAULT_GENCOMPS_INTEL_x86_64=190' ';export' 'PE_TRILINOS_DEFAULT_GENCOMPS_INTEL_x86_64;PE_TRILINOS_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_HDF5_PARALLEL:PE_NETCDF_HDF5PARALLEL:PE_LIBSCI:PE_TPSL' ';export' 'PE_TRILINOS_DEFAULT_REQUIRED_PRODUCTS;PE_TRILINOS_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/trilinos/12.14.1.0/@PRGENV@/@PE_TRILINOS_DEFAULT_GENCOMPS@/@PE_TRILINOS_DEFAULT_TARGET@/lib/pkgconfig' ';export' 'PE_TRILINOS_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_TRILINOS_DEFAULT_VOLATILE_PRGENV=CRAYCLANG\' 'GNU\' INTEL ';export' 'PE_TRILINOS_DEFAULT_VOLATILE_PRGENV;PKGCONFIG_ENABLED=1' ';export' 'PKGCONFIG_ENABLED;PKG_CONFIG_PATH=/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64/pkgconfig:/opt/cray/pe/pmi/5.0.14/lib64/pkgconfig:/opt/cray/pe/craype/2.6.1/pkg-config:/opt/cray/pe/iobuf/2.0.9/lib/pkgconfig:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64/pkgconfig:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/pkgconfig:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64/pkgconfig:/opt/cray/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari/lib64/pkgconfig:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/pkgconfig:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/pkgconfig:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64/pkgconfig:/opt/cray/pe/atp/2.1.3/lib/pkgconfig' ';export' 'PKG_CONFIG_PATH;PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/5.7.0.2/lib64/pkgconfig' ';export' 'PKG_CONFIG_PATH_DEFAULT;SHMEM_ABORT_ON_ERROR=1' ';export' 'SHMEM_ABORT_ON_ERROR;XTPE_NETWORK_TARGET=aries' ';export' 'XTPE_NETWORK_TARGET;_LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/cray/pe/modulefiles/cce/9.0.2:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-cray/6.0.5:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/cray-mpich-abi/7.7.10:/opt/modulefiles/nompirun/nompirun' ';export' '_LMFILES_;cce_already_loaded=0' ';export' 'cce_already_loaded;craype_already_loaded=0' ';export' 'craype_already_loaded;unset' 'CPATH;unset' 'CRAY_PRGENVINTEL;unset' 'DAALROOT;unset' 'INFOPATH;unset' 'INTEL_MAJOR_VERSION;unset' 'INTEL_MINOR_VERSION;unset' 'INTEL_PATH;unset' 'INTEL_PYTHONHOME;unset' 'INTEL_VERSION;unset' 'IPPROOT;unset' 'LIBRARY_PATH;unset' 'MKLROOT;unset' 'TBBROOT;unset' 'intel_already_loaded;'
+++ APP2_STATE=7.0.5
+++ export APP2_STATE
+++ ASSEMBLER_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/as
+++ export ASSEMBLER_AARCH64
+++ ASSEMBLER_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/bin/as
+++ export ASSEMBLER_X86_64
+++ ATP_HOME=/opt/cray/pe/atp/2.1.3
+++ export ATP_HOME
+++ ATP_IGNORE_SIGTERM=1
+++ export ATP_IGNORE_SIGTERM
+++ ATP_MRNET_COMM_PATH=/opt/cray/pe/atp/2.1.3/libexec/atp_mrnet_commnode_wrapper
+++ export ATP_MRNET_COMM_PATH
+++ ATP_POST_LINK_OPTS='-Wl,-L/opt/cray/pe/atp/2.1.3/libApp/ '
+++ export ATP_POST_LINK_OPTS
+++ CC_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64
+++ export CC_X86_64
+++ CHPL_CG_CPP_LINES=1
+++ export CHPL_CG_CPP_LINES
+++ CLASSPATH=/dbhome/db2cat/sqllib/java/db2java.zip:/dbhome/db2cat/sqllib/java/sqlj.zip:/dbhome/db2cat/sqllib/function:/dbhome/db2cat/sqllib/java/db2jcc_license_cu.jar:/dbhome/db2cat/sqllib/tools/clpplus.jar:/dbhome/db2cat/sqllib/tools/jline-0.9.93.jar:/dbhome/db2cat/sqllib/java/db2jcc.jar:.
+++ export CLASSPATH
+++ COMPILERRT_PATH_X86_64=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/lib/clang/9.0.0/lib/linux
+++ export COMPILERRT_PATH_X86_64
+++ CRAYLIBS_AARCH64=/opt/cray/pe/cce/9.0.2/cce/aarch64/lib
+++ export CRAYLIBS_AARCH64
+++ CRAYLIBS_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64/lib
+++ export CRAYLIBS_X86_64
+++ CRAYLMD_LICENSE_FILE=/opt/cray/pe/cce/cce.lic
+++ export CRAYLMD_LICENSE_FILE
+++ CRAYPAT_ALPS_COMPONENT=/opt/cray/pe/perftools/7.0.5/sbin/pat_alps
+++ export CRAYPAT_ALPS_COMPONENT
+++ CRAYPAT_LD_LIBRARY_PATH=/opt/cray/pe/gcc-libs:/opt/cray/gcc-libs:/opt/cray/pe/perftools/7.0.5/lib64
+++ export CRAYPAT_LD_LIBRARY_PATH
+++ CRAYPAT_OPTS_EXECUTABLE=sbin/pat-opts
+++ export CRAYPAT_OPTS_EXECUTABLE
+++ CRAYPAT_ROOT=/opt/cray/pe/perftools/7.0.5
+++ export CRAYPAT_ROOT
+++ CRAYPE_DIR=/opt/cray/pe/craype/2.6.1
+++ export CRAYPE_DIR
+++ CRAYPE_NETWORK_TARGET=aries
+++ export CRAYPE_NETWORK_TARGET
+++ CRAYPE_VERSION=2.6.1
+++ export CRAYPE_VERSION
+++ CRAY_BINUTILS_BIN=/opt/cray/pe/cce/9.0.2/binutils/x86_64/bin
+++ export CRAY_BINUTILS_BIN
+++ CRAY_BINUTILS_BIN_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin
+++ export CRAY_BINUTILS_BIN_AARCH64
+++ CRAY_BINUTILS_BIN_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/bin
+++ export CRAY_BINUTILS_BIN_X86_64
+++ CRAY_BINUTILS_ROOT=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/../
+++ export CRAY_BINUTILS_ROOT
+++ CRAY_BINUTILS_ROOT_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../
+++ export CRAY_BINUTILS_ROOT_AARCH64
+++ CRAY_BINUTILS_ROOT_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/../
+++ export CRAY_BINUTILS_ROOT_X86_64
+++ CRAY_BINUTILS_VERSION=/opt/cray/pe/cce/9.0.2
+++ export CRAY_BINUTILS_VERSION
+++ CRAY_CCE_CLANGSHARE=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/share
+++ export CRAY_CCE_CLANGSHARE
+++ CRAY_CCE_SHARE=/opt/cray/pe/cce/9.0.2/cce/x86_64/share
+++ export CRAY_CCE_SHARE
+++ CRAY_CC_VERSION=9.0.2
+++ export CRAY_CC_VERSION
+++ CRAY_CPU_TARGET=mic-knl
+++ export CRAY_CPU_TARGET
+++ CRAY_CXX_IPA_LIBS=/opt/cray/pe/cce/9.0.2/cce/x86_64/lib/libcray-c++-rts.a
+++ export CRAY_CXX_IPA_LIBS
+++ CRAY_CXX_IPA_LIBS_AARCH64=/opt/cray/pe/cce/9.0.2/cce/aarch64/lib/libcray-c++-rts.a
+++ export CRAY_CXX_IPA_LIBS_AARCH64
+++ CRAY_CXX_IPA_LIBS_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64/lib/libcray-c++-rts.a
+++ export CRAY_CXX_IPA_LIBS_X86_64
+++ CRAY_FTN_VERSION=9.0.2
+++ export CRAY_FTN_VERSION
+++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/CRAYCLANG/9.0/x86_64/lib:/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/lib:/opt/cray/pe/cce/9.0.2/cce/x86_64/lib:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64
+++ export CRAY_LD_LIBRARY_PATH
+++ CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/19.06.1
+++ export CRAY_LIBSCI_BASE_DIR
+++ CRAY_LIBSCI_DIR=/opt/cray/pe/libsci/19.06.1
+++ export CRAY_LIBSCI_DIR
+++ CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/19.06.1/CRAYCLANG/9.0/x86_64
+++ export CRAY_LIBSCI_PREFIX_DIR
+++ CRAY_LIBSCI_VERSION=19.06.1
+++ export CRAY_LIBSCI_VERSION
+++ CRAY_PE_CCE_VARIANT=CC=Clang:FTN=Classic
+++ export CRAY_PE_CCE_VARIANT
+++ CRAY_PE_USE_CLANG=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/bin/clang
+++ export CRAY_PE_USE_CLANG
+++ CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/5.0.14/include
+++ export CRAY_PMI_INCLUDE_OPTS
+++ CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/5.0.14/lib64
+++ export CRAY_PMI_POST_LINK_OPTS
+++ CRAY_PRE_COMPILE_OPTS=-hnetwork=aries
+++ export CRAY_PRE_COMPILE_OPTS
+++ CRAY_PRGENVCRAY=loaded
+++ export CRAY_PRGENVCRAY
+++ CRAY_RCA_INCLUDE_OPTS='-I/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/include -I/opt/cray/krca/2.2.4-6.0.7.1_5.48__g8505b97.ari/include -I/opt/cray-hss-devel/8.0.0/include '
+++ export CRAY_RCA_INCLUDE_OPTS
+++ CRAY_RCA_POST_LINK_OPTS='-L/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64 -lrca '
+++ export CRAY_RCA_POST_LINK_OPTS
+++ DMAPP_ABORT_ON_ERROR=1
+++ export DMAPP_ABORT_ON_ERROR
+++ FORTRAN_SYSTEM_MODULE_NAMES=ftn_lib_definitions
+++ export FORTRAN_SYSTEM_MODULE_NAMES
+++ FTN_X86_64=/opt/cray/pe/cce/9.0.2/cce/x86_64
+++ export FTN_X86_64
+++ GCC_AARCH64=/opt/gcc-cross-aarch64/8.1.0/aarch64
+++ export GCC_AARCH64
+++ GCC_X86_64=/opt/gcc/8.1.0/snos
+++ export GCC_X86_64
+++ INCLUDE_PATH_AARCH64=/opt/cray/pe/cce/9.0.2/cce/aarch64/include/craylibs
+++ export INCLUDE_PATH_AARCH64
+++ INCLUDE_PATH_X86_64=/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/lib/clang/9.0.0/include:/opt/cray/pe/cce/9.0.2/cce/x86_64/include/craylibs
+++ export INCLUDE_PATH_X86_64
+++ LD_LIBRARY_PATH=/opt/cray/pe/papi/5.6.0.5/lib64:/dbhome/db2cat/sqllib/lib64:/dbhome/db2cat/sqllib/lib64/gskit:/dbhome/db2cat/sqllib/lib32
+++ export LD_LIBRARY_PATH
+++ LIBSCI_BASE_DIR=/opt/cray/pe/libsci/19.06.1
+++ export LIBSCI_BASE_DIR
+++ LIBSCI_VERSION=19.06.1
+++ export LIBSCI_VERSION
+++ LINKER_AARCH64=/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/ld
+++ export LINKER_AARCH64
+++ LINKER_X86_64=/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/bin/ld
+++ export LINKER_X86_64
+++ LOADEDMODULES=modules/3.2.11.3:alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:cce/9.0.2:craype-mic-knl:craype-network-aries:craype/2.6.1:cray-libsci/19.06.1:pmi/5.0.14:atp/2.1.3:perftools-base/7.0.5:PrgEnv-cray/6.0.5:rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:cray-mpich-abi/7.7.10:nompirun/nompirun
+++ export LOADEDMODULES
+++ MANPATH=/opt/cray/pe/mpt/7.7.10/gni/man/mpich:/opt/cray/pe/perftools/7.0.5/man:/opt/cray/pe/papi/5.6.0.5/share/pdoc/man:/opt/cray/pe/atp/2.1.3/man:/opt/cray/pe/pmi/5.0.14/man:/opt/cray/pe/libsci/19.06.1/man:/opt/cray/pe/man/csmlversion:/opt/cray/pe/craype/2.6.1/man:/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/share/man:/opt/cray/pe/cce/9.0.2/man:/opt/cray/cfgutils/man:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/man:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/man:/opt/cray/pe/modules/3.2.11.3/share/man:/usr/local/man:/usr/share/man:/usr/man:/opt/cray/share/man:/opt/cray/pe/man
+++ export MANPATH
+++ MODULEPATH=/opt/cray/pe/perftools/7.0.5/modulefiles:/opt/cray/pe/craype/2.6.1/modulefiles:/opt/cray/ari/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/soft/environment/modules/modulefiles:/opt/cray/craype/default/modulefiles
+++ export MODULEPATH
+++ MPICH_ABORT_ON_ERROR=1
+++ export MPICH_ABORT_ON_ERROR
+++ NLSPATH=/opt/cray/pe/cce/9.0.2/cce/x86_64/share/nls/En/%N.cat
+++ export NLSPATH
+++ OFFLOAD_INIT=on_start
+++ export OFFLOAD_INIT
+++ PATH=/opt/modulefiles/nompirun/bin:/opt/cray/pe/perftools/7.0.5/bin:/opt/cray/pe/papi/5.6.0.5/bin:/opt/cray/pe/craype/2.6.1/bin:/opt/cray/pe/cce/9.0.2/cce-clang/x86_64/bin:/opt/cray/pe/cce/9.0.2/binutils/x86_64/x86_64-pc-linux-gnu/bin:/opt/cray/pe/cce/9.0.2/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../bin:/opt/cray/pe/cce/9.0.2/utils/x86_64/bin:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/bin:/opt/cray/cfgutils/bin:/opt/cray/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari/bin:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/bin:/opt/cray/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari/bin:/opt/cray/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari/bin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/sbin:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/bin:/opt/cray/pe/modules/3.2.11.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/dbhome/db2cat/sqllib/bin:/dbhome/db2cat/sqllib/adm:/dbhome/db2cat/sqllib/misc:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin
+++ export PATH
+++ PAT_BUILD_PAPI_BASEDIR=/opt/cray/pe/papi/5.6.0.5
+++ export PAT_BUILD_PAPI_BASEDIR
+++ PAT_REPORT_PRUNE_NAME='_cray$mt_execute_,_cray$mt_start_,__cray_hwpc_,f_cray_hwpc_,cstart,__pat_,pat_region_,PAT_,OMP.slave_loop,slave_entry,_new_slave_entry,_thread_pool_slave_entry,THREAD_POOL_join,__libc_start_main,_start,__start,start_thread,__wrap_,UPC_ADIO_,_upc_,upc_,__caf_,__pgas_,syscall,__device_stub'
+++ export PAT_REPORT_PRUNE_NAME
+++ PERFTOOLS_VERSION=7.0.5
+++ export PERFTOOLS_VERSION
+++ PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.6.3.1/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.5.1/CRAYCLANG/9.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.5.1/CRAYCLANG/9.0/lib/pkgconfig
+++ export PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.6.3.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.5.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.5.1/CRAY/9.0/lib/pkgconfig:/opt/cray/pe/ga/5.3.0.10/CRAY/8.6/lib/pkgconfig
+++ export PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_ENV=CRAY
+++ export PE_ENV
+++ PE_FFTW_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+++ export PE_FFTW_DEFAULT_REQUIRED_PRODUCTS
+++ PE_FFTW_DEFAULT_TARGET_abudhabi=abudhabi
+++ export PE_FFTW_DEFAULT_TARGET_abudhabi
+++ PE_FFTW_DEFAULT_TARGET_broadwell=broadwell
+++ export PE_FFTW_DEFAULT_TARGET_broadwell
+++ PE_FFTW_DEFAULT_TARGET_haswell=haswell
+++ export PE_FFTW_DEFAULT_TARGET_haswell
+++ PE_FFTW_DEFAULT_TARGET_interlagos=interlagos
+++ export PE_FFTW_DEFAULT_TARGET_interlagos
+++ PE_FFTW_DEFAULT_TARGET_ivybridge=ivybridge
+++ export PE_FFTW_DEFAULT_TARGET_ivybridge
+++ PE_FFTW_DEFAULT_TARGET_mic_knl=mic_knl
+++ export PE_FFTW_DEFAULT_TARGET_mic_knl
+++ PE_FFTW_DEFAULT_TARGET_sandybridge=sandybridge
+++ export PE_FFTW_DEFAULT_TARGET_sandybridge
+++ PE_FFTW_DEFAULT_TARGET_share=share
+++ export PE_FFTW_DEFAULT_TARGET_share
+++ PE_FFTW_DEFAULT_TARGET_x86_64=x86_64
+++ export PE_FFTW_DEFAULT_TARGET_x86_64
+++ PE_FFTW_DEFAULT_TARGET_x86_skylake=x86_skylake
+++ export PE_FFTW_DEFAULT_TARGET_x86_skylake
+++ PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/fftw/3.3.8.3/@PE_FFTW_DEFAULT_TARGET@/lib/pkgconfig
+++ export PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_GA_DEFAULT_FIXED_PRGENV='CRAY INTEL'
+++ export PE_GA_DEFAULT_FIXED_PRGENV
+++ PE_GA_DEFAULT_GENCOMPILERS_GNU='8.2 7.3'
+++ export PE_GA_DEFAULT_GENCOMPILERS_GNU
+++ PE_GA_DEFAULT_GENCOMPS_GNU='82 73'
+++ export PE_GA_DEFAULT_GENCOMPS_GNU
+++ PE_GA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/ga/5.3.0.10/@PRGENV@/@PE_GA_DEFAULT_GENCOMPS@/lib/pkgconfig
+++ export PE_GA_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_GA_DEFAULT_VOLATILE_PRGENV=GNU
+++ export PE_GA_DEFAULT_VOLATILE_PRGENV
+++ PE_HDF5_DEFAULT_FIXED_PRGENV='CRAY CRAYCLANG INTEL'
+++ export PE_HDF5_DEFAULT_FIXED_PRGENV
+++ PE_HDF5_DEFAULT_GENCOMPILERS_GNU='8.2 7.1'
+++ export PE_HDF5_DEFAULT_GENCOMPILERS_GNU
+++ PE_HDF5_DEFAULT_GENCOMPS_GNU=
+++ export PE_HDF5_DEFAULT_GENCOMPS_GNU
+++ PE_HDF5_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+++ export PE_HDF5_DEFAULT_REQUIRED_PRODUCTS
+++ PE_HDF5_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/hdf5/1.10.5.1/@PRGENV@/@PE_HDF5_DEFAULT_GENCOMPS@/lib/pkgconfig
+++ export PE_HDF5_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_HDF5_DEFAULT_VOLATILE_PRGENV=GNU
+++ export PE_HDF5_DEFAULT_VOLATILE_PRGENV
+++ PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV='CRAY CRAYCLANG INTEL'
+++ export PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV
+++ PE_HDF5_PARALLEL_DEFAULT_GENCOMPILERS_GNU='8.2 7.1'
+++ export PE_HDF5_PARALLEL_DEFAULT_GENCOMPILERS_GNU
+++ PE_HDF5_PARALLEL_DEFAULT_GENCOMPS_GNU=
+++ export PE_HDF5_PARALLEL_DEFAULT_GENCOMPS_GNU
+++ PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+++ export PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS
+++ PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/hdf5-parallel/1.10.5.1/@PRGENV@/@PE_HDF5_PARALLEL_DEFAULT_GENCOMPS@/lib/pkgconfig
+++ export PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PRGENV=GNU
+++ export PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PRGENV
+++ PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.6.3.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/mpt/7.7.10/gni/mpich-INTEL/16.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.5.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.5.1/INTEL/18.0/lib/pkgconfig:/opt/cray/pe/ga/5.3.0.10/INTEL/18.0/lib/pkgconfig
+++ export PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_LEVEL=9.0
+++ export PE_LEVEL
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64='8.1 7.1'
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64=16.0
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64=90
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64='81 71'
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64=160
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64
+++ PE_LIBSCI_DEFAULT_OMP_REQUIRES=
+++ export PE_LIBSCI_DEFAULT_OMP_REQUIRES
+++ PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp=_mp
+++ export PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp
+++ PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES=PE_LIBSCI_DEFAULT_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME
+++ export PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES
+++ PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+++ export PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS
+++ PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/19.06.1/@PRGENV@/@PE_LIBSCI_DEFAULT_GENCOMPS@/@PE_LIBSCI_DEFAULT_TARGET@/lib/pkgconfig
+++ export PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_LIBSCI_DEFAULT_VOLATILE_PRGENV='CRAY CRAYCLANG GNU INTEL'
+++ export PE_LIBSCI_DEFAULT_VOLATILE_PRGENV
+++ PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64=9.0
+++ export PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_LIBSCI_GENCOMPILERS_CRAY_x86_64=9.0
+++ export PE_LIBSCI_GENCOMPILERS_CRAY_x86_64
+++ PE_LIBSCI_GENCOMPILERS_GNU_x86_64='8.1 7.1'
+++ export PE_LIBSCI_GENCOMPILERS_GNU_x86_64
+++ PE_LIBSCI_GENCOMPILERS_INTEL_x86_64=16.0
+++ export PE_LIBSCI_GENCOMPILERS_INTEL_x86_64
+++ PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64=90
+++ export PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64
+++ PE_LIBSCI_GENCOMPS_CRAY_x86_64=90
+++ export PE_LIBSCI_GENCOMPS_CRAY_x86_64
+++ PE_LIBSCI_GENCOMPS_GNU_x86_64='81 71'
+++ export PE_LIBSCI_GENCOMPS_GNU_x86_64
+++ PE_LIBSCI_GENCOMPS_INTEL_x86_64=160
+++ export PE_LIBSCI_GENCOMPS_INTEL_x86_64
+++ PE_LIBSCI_MODULE_NAME=cray-libsci/19.06.1
+++ export PE_LIBSCI_MODULE_NAME
+++ PE_LIBSCI_OMP_REQUIRES=
+++ export PE_LIBSCI_OMP_REQUIRES
+++ PE_LIBSCI_OMP_REQUIRES_openmp=_mp
+++ export PE_LIBSCI_OMP_REQUIRES_openmp
+++ PE_LIBSCI_PKGCONFIG_LIBS=libsci_mpi:libsci
+++ export PE_LIBSCI_PKGCONFIG_LIBS
+++ PE_LIBSCI_PKGCONFIG_VARIABLES=PE_LIBSCI_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME
+++ export PE_LIBSCI_PKGCONFIG_VARIABLES
+++ PE_LIBSCI_REQUIRED_PRODUCTS=PE_MPICH
+++ export PE_LIBSCI_REQUIRED_PRODUCTS
+++ PE_LIBSCI_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/19.06.1/@PRGENV@/@PE_LIBSCI_GENCOMPS@/@PE_LIBSCI_TARGET@/lib/pkgconfig
+++ export PE_LIBSCI_VOLATILE_PKGCONFIG_PATH
+++ PE_LIBSCI_VOLATILE_PRGENV='CRAY CRAYCLANG GNU INTEL'
+++ export PE_LIBSCI_VOLATILE_PRGENV
+++ PE_MPICH_ALTERNATE_LIBS_dpm=_dpm
+++ export PE_MPICH_ALTERNATE_LIBS_dpm
+++ PE_MPICH_ALTERNATE_LIBS_multithreaded=_mt
+++ export PE_MPICH_ALTERNATE_LIBS_multithreaded
+++ PE_MPICH_DEFAULT_DIR_CRAYCLANG_DEFAULT64=64
+++ export PE_MPICH_DEFAULT_DIR_CRAYCLANG_DEFAULT64
+++ PE_MPICH_DEFAULT_DIR_CRAY_DEFAULT64=64
+++ export PE_MPICH_DEFAULT_DIR_CRAY_DEFAULT64
+++ PE_MPICH_DEFAULT_FIXED_PRGENV=INTEL
+++ export PE_MPICH_DEFAULT_FIXED_PRGENV
+++ PE_MPICH_DEFAULT_GENCOMPILERS_CRAY=9.0
+++ export PE_MPICH_DEFAULT_GENCOMPILERS_CRAY
+++ PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG=9.0
+++ export PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG
+++ PE_MPICH_DEFAULT_GENCOMPILERS_GNU='8.2 8.1 7.1'
+++ export PE_MPICH_DEFAULT_GENCOMPILERS_GNU
+++ PE_MPICH_DEFAULT_GENCOMPS_CRAY=90
+++ export PE_MPICH_DEFAULT_GENCOMPS_CRAY
+++ PE_MPICH_DEFAULT_GENCOMPS_CRAYCLANG=90
+++ export PE_MPICH_DEFAULT_GENCOMPS_CRAYCLANG
+++ PE_MPICH_DEFAULT_GENCOMPS_GNU='82 81 71'
+++ export PE_MPICH_DEFAULT_GENCOMPS_GNU
+++ PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.7.10/gni/mpich-@PRGENV@@PE_MPICH_DEFAULT_DIR_DEFAULT64@/@PE_MPICH_DEFAULT_GENCOMPS@/lib/pkgconfig
+++ export PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_MPICH_DEFAULT_VOLATILE_PRGENV='GNU CRAYCLANG CRAY'
+++ export PE_MPICH_DEFAULT_VOLATILE_PRGENV
+++ PE_MPICH_NV_LIBS=
+++ export PE_MPICH_NV_LIBS
+++ PE_MPICH_NV_LIBS_nvidia20=-lcudart
+++ export PE_MPICH_NV_LIBS_nvidia20
+++ PE_MPICH_NV_LIBS_nvidia35=-lcudart
+++ export PE_MPICH_NV_LIBS_nvidia35
+++ PE_MPICH_NV_LIBS_nvidia60=-lcudart
+++ export PE_MPICH_NV_LIBS_nvidia60
+++ PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_NV_LIBS_@accelerator@:PE_MPICH_ALTERNATE_LIBS_@multithreaded@:PE_MPICH_ALTERNATE_LIBS_@dpm@
+++ export PE_MPICH_PKGCONFIG_VARIABLES
+++ PE_MPICH_TARGET_VAR_nvidia20=-lcudart
+++ export PE_MPICH_TARGET_VAR_nvidia20
+++ PE_MPICH_TARGET_VAR_nvidia35=-lcudart
+++ export PE_MPICH_TARGET_VAR_nvidia35
+++ PE_NETCDF_DEFAULT_FIXED_PRGENV='CRAY CRAYCLANG INTEL'
+++ export PE_NETCDF_DEFAULT_FIXED_PRGENV
+++ PE_NETCDF_DEFAULT_GENCOMPILERS_GNU='8.2 7.1'
+++ export PE_NETCDF_DEFAULT_GENCOMPILERS_GNU
+++ PE_NETCDF_DEFAULT_GENCOMPS_GNU=
+++ export PE_NETCDF_DEFAULT_GENCOMPS_GNU
+++ PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5
+++ export PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS
+++ PE_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.6.3.1/@PRGENV@/@PE_NETCDF_DEFAULT_GENCOMPS@/lib/pkgconfig
+++ export PE_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_NETCDF_DEFAULT_VOLATILE_PRGENV=GNU
+++ export PE_NETCDF_DEFAULT_VOLATILE_PRGENV
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV='CRAY CRAYCLANG INTEL'
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPILERS_GNU='8.2 7.1'
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPILERS_GNU
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS_GNU=
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS_GNU
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5_PARALLEL
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/netcdf-hdf5parallel/4.6.3.1/@PRGENV@/@PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS@/lib/pkgconfig
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PRGENV=GNU
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PRGENV
+++ PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS=
+++ export PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS
+++ PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia=,-lcupti,-lcudart,-lcuda
+++ export PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia
+++ PE_PAPI_DEFAULT_ACCEL_LIBS=
+++ export PE_PAPI_DEFAULT_ACCEL_LIBS
+++ PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35=,-lcupti,-lcudart,-lcuda
+++ export PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35
+++ PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES='PE_PAPI_ACCEL_LIBS_@accelerator@ PE_PAPI_ACCEL_FAMILY_LIBS_@accelerator_family@'
+++ export PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES
+++ PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV='CRAY CRAYCLANG INTEL'
+++ export PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV
+++ PE_PARALLEL_NETCDF_DEFAULT_GENCOMPILERS_GNU='8.2 7.1'
+++ export PE_PARALLEL_NETCDF_DEFAULT_GENCOMPILERS_GNU
+++ PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS_GNU='82 71'
+++ export PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS_GNU
+++ PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.11.1.0/@PRGENV@/@PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS@/lib/pkgconfig
+++ export PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PRGENV=GNU
+++ export PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PRGENV
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_haswell=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_haswell
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_sandybridge=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=9.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_skylake
+++ PE_PETSC_DEFAULT_GENCOMPILERS_GNU_haswell='8.2 7.1'
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_GNU_haswell
+++ PE_PETSC_DEFAULT_GENCOMPILERS_GNU_sandybridge='8.2 7.1'
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_GNU_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_64='8.2 7.1'
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_skylake='8.2 7.1'
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_skylake
+++ PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_haswell=19.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_haswell
+++ PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_sandybridge=19.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=19.0
+++ export PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_skylake
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_haswell=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_haswell
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAY_haswell=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAY_haswell
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAY_sandybridge=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAY_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_64=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_skylake=90
+++ export PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_skylake
+++ PE_PETSC_DEFAULT_GENCOMPS_GNU_haswell='82 71'
+++ export PE_PETSC_DEFAULT_GENCOMPS_GNU_haswell
+++ PE_PETSC_DEFAULT_GENCOMPS_GNU_sandybridge='82 71'
+++ export PE_PETSC_DEFAULT_GENCOMPS_GNU_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_64='82 71'
+++ export PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_skylake='82 71'
+++ export PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_skylake
+++ PE_PETSC_DEFAULT_GENCOMPS_INTEL_haswell=190
+++ export PE_PETSC_DEFAULT_GENCOMPS_INTEL_haswell
+++ PE_PETSC_DEFAULT_GENCOMPS_INTEL_sandybridge=190
+++ export PE_PETSC_DEFAULT_GENCOMPS_INTEL_sandybridge
+++ PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_64=190
+++ export PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_64
+++ PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_skylake=190
+++ export PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_skylake
+++ PE_PETSC_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_TPSL
+++ export PE_PETSC_DEFAULT_REQUIRED_PRODUCTS
+++ PE_PETSC_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/petsc/3.11.2.0/complex/@PRGENV@/@PE_PETSC_DEFAULT_GENCOMPS@/@PE_PETSC_DEFAULT_TARGET@/lib/pkgconfig
+++ export PE_PETSC_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_PETSC_DEFAULT_VOLATILE_PRGENV='CRAY CRAY64 CRAYCLANG CRAYCLANG64 GNU GNU64 INTEL INTEL64'
+++ export PE_PETSC_DEFAULT_VOLATILE_PRGENV
+++ PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_TRILINOS:PE_TPSL_64:PE_TPSL:PE_PETSC:PE_PARALLEL_NETCDF:PE_NETCDF_HDF5PARALLEL:PE_NETCDF:PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_HDF5:PE_GA:PE_FFTW
+++ export PE_PKGCONFIG_DEFAULT_PRODUCTS
+++ PE_PKGCONFIG_LIBS=cray-rca:AtpSigHandler:libsci_mpi:libsci
+++ export PE_PKGCONFIG_LIBS
+++ PE_PKGCONFIG_PRODUCTS=PE_LIBSCI
+++ export PE_PKGCONFIG_PRODUCTS
+++ PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI
+++ export PE_PKGCONFIG_PRODUCTS_DEFAULT
+++ PE_PKG_CONFIG_PATH=/opt/cray/pe/cti/1.0.8/lib/pkgconfig:/opt/cray/pe/cti/1.0.7/lib/pkgconfig:/opt/cray/pe/cti/1.0.6/lib/pkgconfig:/opt/cray/pe/cti/1.0.4/lib/pkgconfig:/opt/cray/pe/cti/1.0.5/lib/pkgconfig
+++ export PE_PKG_CONFIG_PATH
+++ PE_PRODUCT_LIST=CRAY_RCA:CRAY_PMI:CRAY_LIBSCI:CRAYPE:CRAYPE_MIC-KNL:CRAY:CRAY_XPMEM:CRAY_DMAPP:CRAY_UGNI:CRAY_UDREG:CRAY_ALPS:PERFTOOLS:CRAYPAT
+++ export PE_PRODUCT_LIST
+++ PE_SMA_DEFAULT_COMPFLAG=
+++ export PE_SMA_DEFAULT_COMPFLAG
+++ PE_SMA_DEFAULT_COMPFLAG_GNU=-fcray-pointer
+++ export PE_SMA_DEFAULT_COMPFLAG_GNU
+++ PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64=64
+++ export PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64
+++ PE_SMA_DEFAULT_DIR_PGI_DEFAULT64=64
+++ export PE_SMA_DEFAULT_DIR_PGI_DEFAULT64
+++ PE_SMA_DEFAULT_PKGCONFIG_VARIABLES=PE_SMA_COMPFLAG_@prgenv@
+++ export PE_SMA_DEFAULT_PKGCONFIG_VARIABLES
+++ PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.7.10/gni/sma@PE_SMA_DEFAULT_DIR_DEFAULT64@/lib64/pkgconfig
+++ export PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_haswell=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_sandybridge=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=9.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_skylake
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_haswell='8.2 7.1'
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_sandybridge='8.2 7.1'
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_64='8.2 7.1'
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_skylake='8.2 7.1'
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_skylake
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_haswell=19.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_sandybridge=19.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=19.0
+++ export PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_skylake
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_haswell=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_haswell=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_sandybridge=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_64=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_skylake=90
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_skylake
+++ PE_TPSL_64_DEFAULT_GENCOMPS_GNU_haswell='82 71'
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_GNU_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPS_GNU_sandybridge='82 71'
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_GNU_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_64='82 71'
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_skylake='82 71'
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_skylake
+++ PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_haswell=190
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_haswell
+++ PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_sandybridge=190
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_sandybridge
+++ PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_64=190
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_64
+++ PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_skylake=190
+++ export PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_skylake
+++ PE_TPSL_64_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI
+++ export PE_TPSL_64_DEFAULT_REQUIRED_PRODUCTS
+++ PE_TPSL_64_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/tpsl/19.06.1/@PRGENV@64/@PE_TPSL_64_DEFAULT_GENCOMPS@/@PE_TPSL_64_DEFAULT_TARGET@/lib/pkgconfig
+++ export PE_TPSL_64_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_TPSL_64_DEFAULT_VOLATILE_PRGENV='CRAY CRAY64 CRAYCLANG CRAYCLANG64 GNU GNU64 INTEL INTEL64'
+++ export PE_TPSL_64_DEFAULT_VOLATILE_PRGENV
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_haswell
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_skylake
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_haswell=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_haswell
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_sandybridge=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=9.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_skylake
+++ PE_TPSL_DEFAULT_GENCOMPILERS_GNU_haswell='8.2 7.1'
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_GNU_haswell
+++ PE_TPSL_DEFAULT_GENCOMPILERS_GNU_sandybridge='8.2 7.1'
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_GNU_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_64='8.2 7.1'
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_skylake='8.2 7.1'
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_skylake
+++ PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_haswell=19.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_haswell
+++ PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_sandybridge=19.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=19.0
+++ export PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_skylake
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_haswell=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_haswell
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAYCLANG_x86_skylake
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAY_haswell=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAY_haswell
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAY_sandybridge=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAY_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_64=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_skylake=90
+++ export PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_skylake
+++ PE_TPSL_DEFAULT_GENCOMPS_GNU_haswell='82 71'
+++ export PE_TPSL_DEFAULT_GENCOMPS_GNU_haswell
+++ PE_TPSL_DEFAULT_GENCOMPS_GNU_sandybridge='82 71'
+++ export PE_TPSL_DEFAULT_GENCOMPS_GNU_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_64='82 71'
+++ export PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_skylake='82 71'
+++ export PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_skylake
+++ PE_TPSL_DEFAULT_GENCOMPS_INTEL_haswell=190
+++ export PE_TPSL_DEFAULT_GENCOMPS_INTEL_haswell
+++ PE_TPSL_DEFAULT_GENCOMPS_INTEL_sandybridge=190
+++ export PE_TPSL_DEFAULT_GENCOMPS_INTEL_sandybridge
+++ PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_64=190
+++ export PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_64
+++ PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_skylake=190
+++ export PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_skylake
+++ PE_TPSL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI
+++ export PE_TPSL_DEFAULT_REQUIRED_PRODUCTS
+++ PE_TPSL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/tpsl/19.06.1/@PRGENV@/@PE_TPSL_DEFAULT_GENCOMPS@/@PE_TPSL_DEFAULT_TARGET@/lib/pkgconfig
+++ export PE_TPSL_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_TPSL_DEFAULT_VOLATILE_PRGENV='CRAY CRAY64 CRAYCLANG CRAYCLANG64 GNU GNU64 INTEL INTEL64'
+++ export PE_TPSL_DEFAULT_VOLATILE_PRGENV
+++ PE_TRILINOS_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=9.0
+++ export PE_TRILINOS_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_TRILINOS_DEFAULT_GENCOMPILERS_GNU_x86_64='8.2 7.1'
+++ export PE_TRILINOS_DEFAULT_GENCOMPILERS_GNU_x86_64
+++ PE_TRILINOS_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0
+++ export PE_TRILINOS_DEFAULT_GENCOMPILERS_INTEL_x86_64
+++ PE_TRILINOS_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=90
+++ export PE_TRILINOS_DEFAULT_GENCOMPS_CRAYCLANG_x86_64
+++ PE_TRILINOS_DEFAULT_GENCOMPS_GNU_x86_64='82 71'
+++ export PE_TRILINOS_DEFAULT_GENCOMPS_GNU_x86_64
+++ PE_TRILINOS_DEFAULT_GENCOMPS_INTEL_x86_64=190
+++ export PE_TRILINOS_DEFAULT_GENCOMPS_INTEL_x86_64
+++ PE_TRILINOS_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_HDF5_PARALLEL:PE_NETCDF_HDF5PARALLEL:PE_LIBSCI:PE_TPSL
+++ export PE_TRILINOS_DEFAULT_REQUIRED_PRODUCTS
+++ PE_TRILINOS_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/trilinos/12.14.1.0/@PRGENV@/@PE_TRILINOS_DEFAULT_GENCOMPS@/@PE_TRILINOS_DEFAULT_TARGET@/lib/pkgconfig
+++ export PE_TRILINOS_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_TRILINOS_DEFAULT_VOLATILE_PRGENV='CRAYCLANG GNU INTEL'
+++ export PE_TRILINOS_DEFAULT_VOLATILE_PRGENV
+++ PKGCONFIG_ENABLED=1
+++ export PKGCONFIG_ENABLED
+++ PKG_CONFIG_PATH=/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64/pkgconfig:/opt/cray/pe/pmi/5.0.14/lib64/pkgconfig:/opt/cray/pe/craype/2.6.1/pkg-config:/opt/cray/pe/iobuf/2.0.9/lib/pkgconfig:/opt/cray/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari/lib64/pkgconfig:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/pkgconfig:/opt/cray/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari/lib64/pkgconfig:/opt/cray/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari/lib64/pkgconfig:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/pkgconfig:/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/pkgconfig:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64/pkgconfig:/opt/cray/pe/atp/2.1.3/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/5.7.0.2/lib64/pkgconfig
+++ export PKG_CONFIG_PATH_DEFAULT
+++ SHMEM_ABORT_ON_ERROR=1
+++ export SHMEM_ABORT_ON_ERROR
+++ XTPE_NETWORK_TARGET=aries
+++ export XTPE_NETWORK_TARGET
+++ _LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.11.3:/opt/cray/ari/modulefiles/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari:/opt/cray/ari/modulefiles/nodestat/2.3.85-6.0.7.1_5.33__gc6218bb.ari:/opt/cray/ari/modulefiles/sdb/3.3.777-6.0.7.1_6.7__g5ddb0ab.ari:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari:/opt/cray/ari/modulefiles/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.12.0-6.0.7.1_3.13__g3b1768f.ari:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.7.1_6.6__g45d1b37.ari:/opt/cray/ari/modulefiles/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari:/opt/cray/ari/modulefiles/llm/21.3.530-6.0.7.1_5.4__g3b4230e.ari:/opt/cray/ari/modulefiles/nodehealth/5.6.14-6.0.7.1_8.50__gd6a82f3.ari:/opt/cray/ari/modulefiles/system-config/3.5.2794-6.0.7.1_9.1__g651274ab.ari:/opt/modulefiles/Base-opts/2.4.135-6.0.7.1_5.6__g718f891.ari:/opt/cray/pe/modulefiles/cce/9.0.2:/opt/cray/pe/craype/2.6.1/modulefiles/craype-mic-knl:/opt/cray/pe/craype/2.6.1/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.6.1:/opt/cray/pe/modulefiles/cray-libsci/19.06.1:/opt/cray/pe/modulefiles/pmi/5.0.14:/opt/cray/pe/modulefiles/atp/2.1.3:/opt/cray/pe/modulefiles/perftools-base/7.0.5:/opt/cray/pe/modulefiles/PrgEnv-cray/6.0.5:/opt/cray/ari/modulefiles/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari:/opt/cray/pe/modulefiles/cray-mpich-abi/7.7.10:/opt/modulefiles/nompirun/nompirun
+++ export _LMFILES_
+++ cce_already_loaded=0
+++ export cce_already_loaded
+++ craype_already_loaded=0
+++ export craype_already_loaded
+++ unset CPATH
+++ unset CRAY_PRGENVINTEL
+++ unset DAALROOT
+++ unset INFOPATH
+++ unset INTEL_MAJOR_VERSION
+++ unset INTEL_MINOR_VERSION
+++ unset INTEL_PATH
+++ unset INTEL_PYTHONHOME
+++ unset INTEL_VERSION
+++ unset IPPROOT
+++ unset LIBRARY_PATH
+++ unset MKLROOT
+++ unset TBBROOT
+++ unset intel_already_loaded
++ export LD_LIBRARY_PATH=/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/:/opt/cray/diag/lib/:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/:/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/INTEL/16.0/x86_64/lib:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64:/opt/cray/pe/papi/5.6.0.5/lib64:/opt/cray/wlm_detect/1.3.3-6.0.7.1_5.6__g7109084.ari/lib64/
++ LD_LIBRARY_PATH=/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/:/opt/cray/diag/lib/:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/:/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/INTEL/16.0/x86_64/lib:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64:/opt/cray/pe/papi/5.6.0.5/lib64:/opt/cray/wlm_detect/1.3.3-6.0.7.1_5.6__g7109084.ari/lib64/
++ export SINGULARITYENV_LD_LIBRARY_PATH=/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/:/opt/cray/diag/lib/:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/:/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/INTEL/16.0/x86_64/lib:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64:/opt/cray/pe/papi/5.6.0.5/lib64:/opt/cray/wlm_detect/1.3.3-6.0.7.1_5.6__g7109084.ari/lib64/
++ SINGULARITYENV_LD_LIBRARY_PATH=/opt/cray/udreg/2.3.2-6.0.7.1_5.15__g5196236.ari/lib64/:/opt/cray/diag/lib/:/opt/cray/ugni/6.0.14.0-6.0.7.1_3.15__gea11d3d.ari/lib64/:/opt/cray/xpmem/2.2.15-6.0.7.1_5.13__g7549d06.ari/lib64/:/opt/cray/pe/mpt/7.7.10/gni/mpich-intel-abi/16.0/lib:/opt/cray/pe/perftools/7.0.5/lib64:/opt/cray/rca/2.2.18-6.0.7.1_5.52__g2aa4f39.ari/lib64:/opt/cray/pe/pmi/5.0.14/lib64:/opt/cray/pe/libsci/19.06.1/INTEL/16.0/x86_64/lib:/opt/cray/alps/6.6.43-6.0.7.1_5.51__ga796da32.ari/lib64:/opt/cray/pe/papi/5.6.0.5/lib64:/opt/cray/wlm_detect/1.3.3-6.0.7.1_5.6__g7109084.ari/lib64/
++ RANKS_PER_NODE=1
++ JOBSIZE=8
++ TOTAL_RANKS=8
++ aprun -n 8 -N 1 -cc none singularity run -B /opt:/opt/ -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/uboone/kmistry/workdirs/singularity/uboone_singularity_slf7-balsam.sif /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/container_wrapper.sh
+aprun: Apid 19135450: Caught signal Terminated, sending to application

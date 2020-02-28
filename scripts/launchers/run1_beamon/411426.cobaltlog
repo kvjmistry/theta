@@ -1,0 +1,30 @@
+Jobid: 411426
+qsub --mode script -A uboone -n 128 -q default -t 90 --attrs ssds=required:ssd_size=128 launch_run1_beamon.sh
+Thu Feb 20 22:54:51 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon
+jobid 411426 submitted from terminal /dev/pts/37
+2020-02-21 18:18:50,812 INFO: Starting Resource_Prologue
+2020-02-21 18:18:50,827 DEBUG: no enabling attribute found
+2020-02-21 18:18:50,827 INFO: Resource_Prologue finished with exit code 0
+Fri Feb 21 18:19:13 2020 +0000 (UTC) 
+Fri Feb 21 18:19:13 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/launch_run1_beamon.sh'
+Fri Feb 21 18:19:13 2020 +0000 (UTC) 
+Fri Feb 21 18:19:13 2020 +0000 (UTC) Environment:
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_PARTCORES=64
+Fri Feb 21 18:19:13 2020 +0000 (UTC) SHELL=/bin/bash
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_PARTNAME=110-119,568,980-989,1116,1562-1563,1567,1630-1639,1796-1797,1980,1988-1989,2070-2079,2192-2193,2250-2253,2255-2259,2470-2473,2476-2477,2490-2493,2495-2499,2670-2679,2780-2789,2906-2907,2909,2920-2929,3220-3222,3394,3432,3500-3509,3768-3769,4027,4424
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_JOBID=411426
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_STARTTIME=1582309115
+Fri Feb 21 18:19:13 2020 +0000 (UTC) LOGNAME=kmistry
+Fri Feb 21 18:19:13 2020 +0000 (UTC) USER=kmistry
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_ENDTIME=1582314515
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_PARTSIZE=128
+Fri Feb 21 18:19:13 2020 +0000 (UTC) HOME=/home/kmistry
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_JOBSIZE=128
+Fri Feb 21 18:19:13 2020 +0000 (UTC) COBALT_QUEUE=default
+Fri Feb 21 18:19:13 2020 +0000 (UTC) 
+Fri Feb 21 18:19:13 2020 +0000 (UTC) Info: stdin received from /dev/null
+Fri Feb 21 18:19:13 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/411426.output
+Fri Feb 21 18:19:13 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/411426.error
+Fri Feb 21 18:19:13 2020 +0000 (UTC) 
+Fri Feb 21 19:49:23 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

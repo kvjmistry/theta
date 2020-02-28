@@ -1,0 +1,3 @@
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+Application 19140048 resources: utime ~916s, stime ~408s, Rss ~382472, inblocks ~126430, outblocks ~2444432

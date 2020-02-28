@@ -3,6 +3,9 @@
 physics.filters.opfiltercommon: @local::physics.filters.opfiltercommonnumi
 physics.filters.opfiltercommon.OpHitProducer: "ophitBeam"
 
+physics.filters.opfiltercommon.VetoStartTick: 170
+physics.filters.opfiltercommon.VetoEndTick: 300
+
 services.CRTChannelStatusService.ChannelStatusProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
 services.ChannelStatusService.ChannelStatusProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
 services.DetPedestalService.DetPedestalRetrievalAlg.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"

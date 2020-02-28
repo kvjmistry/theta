@@ -1,0 +1,30 @@
+Jobid: 410536
+qsub --mode script -A uboone -n 8 -q debug-cache-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamon_node_pack.sh
+Mon Feb 17 23:20:14 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/node_pack
+jobid 410536 submitted from terminal /dev/pts/26
+2020-02-17 23:56:07,878 INFO: Starting Resource_Prologue
+2020-02-17 23:56:07,892 DEBUG: no enabling attribute found
+2020-02-17 23:56:07,892 INFO: Resource_Prologue finished with exit code 0
+Mon Feb 17 23:56:28 2020 +0000 (UTC) 
+Mon Feb 17 23:56:28 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/node_pack/launch_run1_beamon_node_pack.sh'
+Mon Feb 17 23:56:28 2020 +0000 (UTC) 
+Mon Feb 17 23:56:28 2020 +0000 (UTC) Environment:
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_PARTCORES=64
+Mon Feb 17 23:56:28 2020 +0000 (UTC) SHELL=/bin/bash
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_PARTNAME=3826-3827,3832-3833,3835-3836,3838-3839
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_JOBID=410536
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_STARTTIME=1581983747
+Mon Feb 17 23:56:28 2020 +0000 (UTC) LOGNAME=kmistry
+Mon Feb 17 23:56:28 2020 +0000 (UTC) USER=kmistry
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_ENDTIME=1581987347
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_PARTSIZE=8
+Mon Feb 17 23:56:28 2020 +0000 (UTC) HOME=/home/kmistry
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_JOBSIZE=8
+Mon Feb 17 23:56:28 2020 +0000 (UTC) COBALT_QUEUE=debug-cache-quad
+Mon Feb 17 23:56:28 2020 +0000 (UTC) 
+Mon Feb 17 23:56:28 2020 +0000 (UTC) Info: stdin received from /dev/null
+Mon Feb 17 23:56:28 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/node_pack/410536.output
+Mon Feb 17 23:56:28 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/node_pack/410536.error
+Mon Feb 17 23:56:28 2020 +0000 (UTC) 
+Tue Feb 18 00:55:16 2020 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal

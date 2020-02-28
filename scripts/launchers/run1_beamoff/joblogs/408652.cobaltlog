@@ -1,0 +1,30 @@
+Jobid: 408652
+qsub --mode script -A uboone -n 5 -q debug-cache-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamoff.sh
+Mon Feb 10 00:34:45 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff
+jobid 408652 submitted from terminal /dev/pts/1
+2020-02-10 01:02:40,763 INFO: Starting Resource_Prologue
+2020-02-10 01:02:40,768 DEBUG: no enabling attribute found
+2020-02-10 01:02:40,768 INFO: Resource_Prologue finished with exit code 0
+Mon Feb 10 01:03:16 2020 +0000 (UTC) 
+Mon Feb 10 01:03:16 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/launch_run1_beamoff.sh'
+Mon Feb 10 01:03:16 2020 +0000 (UTC) 
+Mon Feb 10 01:03:16 2020 +0000 (UTC) Environment:
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_PARTCORES=64
+Mon Feb 10 01:03:16 2020 +0000 (UTC) SHELL=/bin/bash
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_PARTNAME=3827,3833,3835,3838-3839
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_JOBID=408652
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_STARTTIME=1581296537
+Mon Feb 10 01:03:16 2020 +0000 (UTC) LOGNAME=kmistry
+Mon Feb 10 01:03:16 2020 +0000 (UTC) USER=kmistry
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_ENDTIME=1581300137
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_PARTSIZE=5
+Mon Feb 10 01:03:16 2020 +0000 (UTC) HOME=/home/kmistry
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_JOBSIZE=5
+Mon Feb 10 01:03:16 2020 +0000 (UTC) COBALT_QUEUE=debug-cache-quad
+Mon Feb 10 01:03:16 2020 +0000 (UTC) 
+Mon Feb 10 01:03:16 2020 +0000 (UTC) Info: stdin received from /dev/null
+Mon Feb 10 01:03:16 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/408652.output
+Mon Feb 10 01:03:16 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/408652.error
+Mon Feb 10 01:03:16 2020 +0000 (UTC) 
+Mon Feb 10 01:16:49 2020 +0000 (UTC) Info: user delete requested with signal SIGTERM by user kmistry

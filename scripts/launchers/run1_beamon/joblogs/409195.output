@@ -1,0 +1,10 @@
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamon_chain_run1 --time-limit-min=58
+Application 19151215 exit signals: Terminated
+Application 19151215 resources: utime ~8s, stime ~31s, Rss ~24460, inblocks ~95242, outblocks ~0

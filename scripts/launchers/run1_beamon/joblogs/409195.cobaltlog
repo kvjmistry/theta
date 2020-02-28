@@ -1,0 +1,30 @@
+Jobid: 409195
+qsub --mode script -A uboone -n 8 -q debug-cache-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamon.sh
+Wed Feb 12 16:10:05 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon
+jobid 409195 submitted from terminal /dev/pts/19
+2020-02-12 16:32:00,006 INFO: Starting Resource_Prologue
+2020-02-12 16:32:00,024 DEBUG: no enabling attribute found
+2020-02-12 16:32:00,024 INFO: Resource_Prologue finished with exit code 0
+Wed Feb 12 16:32:20 2020 +0000 (UTC) 
+Wed Feb 12 16:32:20 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/launch_run1_beamon.sh'
+Wed Feb 12 16:32:20 2020 +0000 (UTC) 
+Wed Feb 12 16:32:20 2020 +0000 (UTC) Environment:
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_PARTCORES=64
+Wed Feb 12 16:32:20 2020 +0000 (UTC) SHELL=/bin/bash
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_PARTNAME=3824-3826,3828-3829,3831,3837-3838
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_JOBID=409195
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_STARTTIME=1581525104
+Wed Feb 12 16:32:20 2020 +0000 (UTC) LOGNAME=kmistry
+Wed Feb 12 16:32:20 2020 +0000 (UTC) USER=kmistry
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_ENDTIME=1581528704
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_PARTSIZE=8
+Wed Feb 12 16:32:20 2020 +0000 (UTC) HOME=/home/kmistry
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_JOBSIZE=8
+Wed Feb 12 16:32:20 2020 +0000 (UTC) COBALT_QUEUE=debug-cache-quad
+Wed Feb 12 16:32:20 2020 +0000 (UTC) 
+Wed Feb 12 16:32:20 2020 +0000 (UTC) Info: stdin received from /dev/null
+Wed Feb 12 16:32:20 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/409195.output
+Wed Feb 12 16:32:20 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/409195.error
+Wed Feb 12 16:32:20 2020 +0000 (UTC) 
+Wed Feb 12 17:32:48 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

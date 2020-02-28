@@ -1,0 +1,30 @@
+Jobid: 408441
+qsub --mode script -A uboone -n 5 -q debug-flat-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamon.sh
+Sat Feb 08 20:10:51 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon
+jobid 408441 submitted from terminal /dev/pts/7
+2020-02-08 20:46:21,805 INFO: Starting Resource_Prologue
+2020-02-08 20:46:21,821 DEBUG: no enabling attribute found
+2020-02-08 20:46:21,821 INFO: Resource_Prologue finished with exit code 0
+Sat Feb 08 20:46:50 2020 +0000 (UTC) 
+Sat Feb 08 20:46:50 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/launch_run1_beamon.sh'
+Sat Feb 08 20:46:50 2020 +0000 (UTC) 
+Sat Feb 08 20:46:50 2020 +0000 (UTC) Environment:
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_PARTCORES=64
+Sat Feb 08 20:46:50 2020 +0000 (UTC) SHELL=/bin/bash
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_PARTNAME=0-2,10-11
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_JOBID=408441
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_STARTTIME=1581194755
+Sat Feb 08 20:46:50 2020 +0000 (UTC) LOGNAME=kmistry
+Sat Feb 08 20:46:50 2020 +0000 (UTC) USER=kmistry
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_ENDTIME=1581198355
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_PARTSIZE=5
+Sat Feb 08 20:46:50 2020 +0000 (UTC) HOME=/home/kmistry
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_JOBSIZE=5
+Sat Feb 08 20:46:50 2020 +0000 (UTC) COBALT_QUEUE=debug-flat-quad
+Sat Feb 08 20:46:50 2020 +0000 (UTC) 
+Sat Feb 08 20:46:50 2020 +0000 (UTC) Info: stdin received from /dev/null
+Sat Feb 08 20:46:50 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/408441.output
+Sat Feb 08 20:46:50 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/408441.error
+Sat Feb 08 20:46:50 2020 +0000 (UTC) 
+Sat Feb 08 21:47:08 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

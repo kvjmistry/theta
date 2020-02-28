@@ -1,0 +1,9 @@
+physics.ep: [out]
+outputs.out: {
+  module_type: RootOutput
+  fileName: "%ifb_event%#.root"
+  compressionLevel: 1
+  fileProperties: {
+    maxEvents: 1
+  }
+}

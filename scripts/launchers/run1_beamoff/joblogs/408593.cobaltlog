@@ -1,0 +1,30 @@
+Jobid: 408593
+qsub --mode script -A uboone -n 5 -q debug-flat-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamoff.sh
+Sun Feb 09 17:21:03 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff
+jobid 408593 submitted from terminal /dev/pts/23
+2020-02-09 17:31:51,410 INFO: Starting Resource_Prologue
+2020-02-09 17:31:51,424 DEBUG: no enabling attribute found
+2020-02-09 17:31:51,424 INFO: Resource_Prologue finished with exit code 0
+Sun Feb 09 17:32:27 2020 +0000 (UTC) 
+Sun Feb 09 17:32:27 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/launch_run1_beamoff.sh'
+Sun Feb 09 17:32:27 2020 +0000 (UTC) 
+Sun Feb 09 17:32:27 2020 +0000 (UTC) Environment:
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_PARTCORES=64
+Sun Feb 09 17:32:27 2020 +0000 (UTC) SHELL=/bin/bash
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_PARTNAME=0-2,10-11
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_JOBID=408593
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_STARTTIME=1581269489
+Sun Feb 09 17:32:27 2020 +0000 (UTC) LOGNAME=kmistry
+Sun Feb 09 17:32:27 2020 +0000 (UTC) USER=kmistry
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_ENDTIME=1581273089
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_PARTSIZE=5
+Sun Feb 09 17:32:27 2020 +0000 (UTC) HOME=/home/kmistry
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_JOBSIZE=5
+Sun Feb 09 17:32:27 2020 +0000 (UTC) COBALT_QUEUE=debug-flat-quad
+Sun Feb 09 17:32:27 2020 +0000 (UTC) 
+Sun Feb 09 17:32:27 2020 +0000 (UTC) Info: stdin received from /dev/null
+Sun Feb 09 17:32:27 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/408593.output
+Sun Feb 09 17:32:27 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/408593.error
+Sun Feb 09 17:32:27 2020 +0000 (UTC) 
+Sun Feb 09 18:32:54 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

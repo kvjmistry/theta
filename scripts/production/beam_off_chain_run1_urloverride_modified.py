@@ -34,20 +34,20 @@ def getNumberEvents(filename, filelist):
 
 # ---------------------------------------------------------------------------------------------
 # The files to run over
-files = glob.glob("/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamon/prod_numi_swizzle_inclusive_v3_tmnt_stride2_offset0_run6748_goodruns_beamdata/*.root")
+files = glob.glob("/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamoff/prod_extnumi_swizzle_inclusive_v3_tmnt_stride2_offset0_goodruns/*.root")
 
 # The input eventlist
-input_event_list="/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamon/event_lists/event_list_prod_numi_swizzle_inclusive_v3_tmnt_stride2_offset0_run6748_goodruns_FileNames_withPath.list"
+input_event_list="/lus/theta-fs0/projects/uboone/NuMI_Data/run1/beamoff/event_lists/event_list_prod_extnumi_swizzle_inclusive_v3_tmnt_stride2_offset0_goodruns_FileNames_withPath.list"
 
-join_fcl="/lus/theta-fs0/projects/uboone/kmistry/fcl/join_fcls/join_run1_beamon.fcl"
+join_fcl="/lus/theta-fs0/projects/uboone/kmistry/fcl/join_fcls/join_run1_beamoff.fcl"
 
 tot_events=0
 
 # The total number of events to process, set this number to infinity to populate the db for all events
-max_events=450000000000000
+max_events=200
 
 # The total number of files to process
-max_files=1000000000000000
+max_files=1000000000
 
 # Split the workflow into sets
 Set=0
@@ -85,10 +85,10 @@ for i, _file in enumerate(files):
     if ((i+1)%1000 == 0):
         Set = Set+1
 
-    workflow_timestamp = f"beamon_chain_run1_timestamp"
-    workflow_main_reco1  = f"beamon_chain_run1_set{Set}_reco1"
-    workflow_main_reco2  = f"beamon_chain_run1_set{Set}_reco2"
-    workflow_join  = f"beamon_chain_run1_join"
+    workflow_timestamp = f"beamoff_chain_run1_timestamp"
+    workflow_main_reco1  = f"beamoff_chain_run1_set{Set}_reco1"
+    workflow_main_reco2  = f"beamoff_chain_run1_set{Set}_reco2"
+    workflow_join  = f"beamoff_chain_run1_join"
 
     timestamp_args  = f"{_file}"
 
@@ -117,37 +117,37 @@ for i, _file in enumerate(files):
     )
     
     for ievent in range(nevents):
-        beamon_reco1_args  = f"{_file} {ievent}"
-        beamon_reco2_args  = f"{ievent}"
+        beamoff_reco1_args  = f"{_file} {ievent}"
+        beamoff_reco2_args  = f"{ievent}"
 
-        beamon_reco1_job = dag.add_job(
-            name = f"beamon_reco1_{i}_{ievent}",
+        beamoff_reco1_job = dag.add_job(
+            name = f"beamoff_reco1_{i}_{ievent}",
             workflow = workflow_main_reco1,
-            description = "uboone reco1 beam on chain",
+            description = "uboone reco1 beam off chain",
             num_nodes = 1,
             ranks_per_node = 1,
             node_packing_count = node_pack_count,
-            args = beamon_reco1_args,
+            args = beamoff_reco1_args,
             wall_time_minutes = 80,
-            application= "beamon_chain_run1_reco1"
+            application= "beamoff_chain_run1_reco1"
         )
 
-        beamon_reco2_job = dag.add_job(
-            name = f"beamon_reco2_{i}_{ievent}",
+        beamoff_reco2_job = dag.add_job(
+            name = f"beamoff_reco2_{i}_{ievent}",
             workflow = workflow_main_reco2,
-            description = "uboone reco2 beam on chain",
+            description = "uboone reco2 beamoff on chain",
             num_nodes = 1,
             ranks_per_node = 1,
             node_packing_count = node_pack_count,
-            args = beamon_reco2_args,
+            args = beamoff_reco2_args,
             wall_time_minutes = 80,
-            application= "beamon_chain_run1_reco2"
+            application= "beamoff_chain_run1_reco2"
         )
 
         # add_dependency(parent, child)
-        dag.add_dependency(timestamp_job,beamon_reco1_job)
-        dag.add_dependency(beamon_reco1_job, beamon_reco2_job)
-        dag.add_dependency(beamon_reco2_job,mergeFinal_job)
+        dag.add_dependency(timestamp_job,beamoff_reco1_job)
+        dag.add_dependency(beamoff_reco1_job, beamoff_reco2_job)
+        dag.add_dependency(beamoff_reco2_job,mergeFinal_job)
 
 
 print("Total number of events to be processed: ", tot_events)

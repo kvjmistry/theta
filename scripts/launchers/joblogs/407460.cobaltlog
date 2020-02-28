@@ -28,3 +28,4 @@ Thu Feb 06 17:08:15 2020 +0000 (UTC) Info: stdin received from /dev/null
 Thu Feb 06 17:08:15 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/407460.output
 Thu Feb 06 17:08:15 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/407460.error
 Thu Feb 06 17:08:15 2020 +0000 (UTC) 
+Thu Feb 06 17:40:44 2020 +0000 (UTC) Info: task completed normally with an exit code of 137; initiating job cleanup and removal

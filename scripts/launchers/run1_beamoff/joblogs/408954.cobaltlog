@@ -1,0 +1,5 @@
+Jobid: 408954
+qsub --mode script -A uboone -n 2 -q debug-flat-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamoff.sh
+Tue Feb 11 18:53:41 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff
+jobid 408954 submitted from terminal /dev/pts/28
+Tue Feb 11 19:20:49 2020 +0000 (UTC) Info: user delete requested; removing job from the queue

@@ -1,0 +1,30 @@
+Jobid: 407883
+qsub --mode script -A uboone -n 8 -q debug-flat-quad -t 60 --attrs ssds=required:ssd_size=128 debug_launch_8nodes.sh
+Thu Feb 06 20:51:22 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers
+jobid 407883 submitted from terminal /dev/pts/27
+2020-02-06 21:15:47,651 INFO: Starting Resource_Prologue
+2020-02-06 21:15:47,668 DEBUG: no enabling attribute found
+2020-02-06 21:15:47,668 INFO: Resource_Prologue finished with exit code 0
+Thu Feb 06 21:16:26 2020 +0000 (UTC) 
+Thu Feb 06 21:16:26 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/debug_launch_8nodes.sh'
+Thu Feb 06 21:16:26 2020 +0000 (UTC) 
+Thu Feb 06 21:16:26 2020 +0000 (UTC) Environment:
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_PARTCORES=64
+Thu Feb 06 21:16:26 2020 +0000 (UTC) SHELL=/bin/bash
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_PARTNAME=0-4,6,10-11
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_JOBID=407883
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_STARTTIME=1581023719
+Thu Feb 06 21:16:26 2020 +0000 (UTC) LOGNAME=kmistry
+Thu Feb 06 21:16:26 2020 +0000 (UTC) USER=kmistry
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_ENDTIME=1581027319
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_PARTSIZE=8
+Thu Feb 06 21:16:26 2020 +0000 (UTC) HOME=/home/kmistry
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_JOBSIZE=8
+Thu Feb 06 21:16:26 2020 +0000 (UTC) COBALT_QUEUE=debug-flat-quad
+Thu Feb 06 21:16:26 2020 +0000 (UTC) 
+Thu Feb 06 21:16:26 2020 +0000 (UTC) Info: stdin received from /dev/null
+Thu Feb 06 21:16:26 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/407883.output
+Thu Feb 06 21:16:26 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/407883.error
+Thu Feb 06 21:16:26 2020 +0000 (UTC) 
+Thu Feb 06 22:16:45 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

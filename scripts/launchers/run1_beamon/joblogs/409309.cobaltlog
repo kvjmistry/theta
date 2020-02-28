@@ -1,0 +1,30 @@
+Jobid: 409309
+qsub --mode script -A uboone -n 8 -q debug-flat-quad -t 60 --attrs ssds=required:ssd_size=128 launch_run1_beamon.sh
+Thu Feb 13 03:43:50 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon
+jobid 409309 submitted from terminal /dev/pts/10
+2020-02-13 03:44:45,882 INFO: Starting Resource_Prologue
+2020-02-13 03:44:45,884 DEBUG: no enabling attribute found
+2020-02-13 03:44:45,884 INFO: Resource_Prologue finished with exit code 0
+Thu Feb 13 03:45:06 2020 +0000 (UTC) 
+Thu Feb 13 03:45:06 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/launch_run1_beamon.sh'
+Thu Feb 13 03:45:06 2020 +0000 (UTC) 
+Thu Feb 13 03:45:06 2020 +0000 (UTC) Environment:
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_PARTCORES=64
+Thu Feb 13 03:45:06 2020 +0000 (UTC) SHELL=/bin/bash
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_PARTNAME=5,7-9,20-23
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_JOBID=409309
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_STARTTIME=1581565471
+Thu Feb 13 03:45:06 2020 +0000 (UTC) LOGNAME=kmistry
+Thu Feb 13 03:45:06 2020 +0000 (UTC) USER=kmistry
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_ENDTIME=1581569071
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_PARTSIZE=8
+Thu Feb 13 03:45:06 2020 +0000 (UTC) HOME=/home/kmistry
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_JOBSIZE=8
+Thu Feb 13 03:45:06 2020 +0000 (UTC) COBALT_QUEUE=debug-flat-quad
+Thu Feb 13 03:45:06 2020 +0000 (UTC) 
+Thu Feb 13 03:45:06 2020 +0000 (UTC) Info: stdin received from /dev/null
+Thu Feb 13 03:45:06 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/409309.output
+Thu Feb 13 03:45:06 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/409309.error
+Thu Feb 13 03:45:06 2020 +0000 (UTC) 
+Thu Feb 13 04:45:13 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

@@ -25,6 +25,9 @@ microboone_tfile_metadata:
     fileFormat:            "root"
 }
 
+# add compression to see if it speeds up the processing
+outputs.out1.compressionLevel: 1
+
 # Override the database URL to use the nginx server on the theta login node
 #services.ChannelStatusService.ChannelStatusProvider.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"
 #services.DetPedestalService.DetPedestalRetrievalAlg.DatabaseRetrievalAlg.DBUrl: "http://thetalogin6:8186/uboonecon_prod/app/"

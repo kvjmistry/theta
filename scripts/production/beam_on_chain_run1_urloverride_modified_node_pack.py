@@ -2,8 +2,6 @@ from balsam.launcher import dag
 import os
 import subprocess
 import glob
-
-node_pack_count=64
  
 # ---------------------------------------------------------------------------------------------
 # Function that reads in a filelist with the file and eventcount and returns the event count
@@ -44,13 +42,16 @@ join_fcl="/lus/theta-fs0/projects/uboone/kmistry/fcl/join_fcls/join_run1_beamon.
 tot_events=0
 
 # The total number of events to process, set this number to infinity to populate the db for all events
-max_events=450000000000000
+max_events=435
 
 # The total number of files to process
-max_files=1000000000000000
+max_files=30000000000000000
 
 # Split the workflow into sets
 Set=0
+
+# Set the node_pack count
+node_pack_count=64
 
 # The total number of files to be processed
 files_processed=0
@@ -85,10 +86,10 @@ for i, _file in enumerate(files):
     if ((i+1)%1000 == 0):
         Set = Set+1
 
-    workflow_timestamp = f"beamon_chain_run1_timestamp"
-    workflow_main_reco1  = f"beamon_chain_run1_set{Set}_reco1"
-    workflow_main_reco2  = f"beamon_chain_run1_set{Set}_reco2"
-    workflow_join  = f"beamon_chain_run1_join"
+    workflow_timestamp   = f"beamon_chain_run1_timestamp_node_pack_{node_pack_count}"
+    workflow_main_reco1  = f"beamon_chain_run1_set{Set}_reco1_node_pack_{node_pack_count}"
+    workflow_main_reco2  = f"beamon_chain_run1_set{Set}_reco2_node_pack_{node_pack_count}"
+    workflow_join        = f"beamon_chain_run1_join_node_pack_{node_pack_count}"
 
     timestamp_args  = f"{_file}"
 

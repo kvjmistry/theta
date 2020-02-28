@@ -1,0 +1,1 @@
+aprun -n 1 -N 1 -cc none singularity run -B /opt:/opt/ -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/uboone/containers/no_singularity/uboone_singularity_slf7-balsam.sif /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/multi_file_test/multifile.sh

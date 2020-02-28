@@ -1,0 +1,31 @@
+Jobid: 411853
+qsub --mode script -A uboone -n 256 -q default -t 90 --attrs ssds=required:ssd_size=128 launch_run1_beamon.sh
+Sat Feb 22 02:42:11 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon
+jobid 411853 submitted from terminal /dev/pts/22
+Tue Feb 25 00:38:22 2020 +0000 (UTC) Info: job is not being held; ignoring release request
+2020-02-27 03:29:55,484 INFO: Starting Resource_Prologue
+2020-02-27 03:29:55,497 DEBUG: no enabling attribute found
+2020-02-27 03:29:55,497 INFO: Resource_Prologue finished with exit code 0
+Thu Feb 27 03:30:14 2020 +0000 (UTC) 
+Thu Feb 27 03:30:14 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/launch_run1_beamon.sh'
+Thu Feb 27 03:30:14 2020 +0000 (UTC) 
+Thu Feb 27 03:30:14 2020 +0000 (UTC) Environment:
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_PARTCORES=64
+Thu Feb 27 03:30:14 2020 +0000 (UTC) SHELL=/bin/bash
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_PARTNAME=515,517-519,620,622-623,625-629,830-839,920-929,1000,1002,1004-1009,1220,1225,1286,1534-1535,1570-1577,1820-1829,1920-1929,1986,2090-2099,2140-2145,2149,2184-2185,2188,2231-2235,2237-2239,2411,2520-2525,2527-2529,2700-2703,2708-2709,2742,2745,2880-2889,2950-2951,3069,3111,3118,3190-3194,3196,3199,3223,3270-3272,3274-3275,3277-3279,3310-3313,3315,3318-3319,3332,3471-3472,3476-3479,3490,3492-3494,3496-3499,3577,3652-3657,3662,3669,3870-3879,3900,3902-3909,3950,3952,3989,4090,4155,4160-4169,4180-4181,4184-4187,4191-4193,4197,4220-4223,4226,4248-4249,4256-4257,4268,4320-4321,4326,4340-4342,4344-4349,4464,4490,4492-4494,4565,4594,4600
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_JOBID=411853
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_STARTTIME=1582774182
+Thu Feb 27 03:30:14 2020 +0000 (UTC) LOGNAME=kmistry
+Thu Feb 27 03:30:14 2020 +0000 (UTC) USER=kmistry
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_ENDTIME=1582779582
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_PARTSIZE=256
+Thu Feb 27 03:30:14 2020 +0000 (UTC) HOME=/home/kmistry
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_JOBSIZE=256
+Thu Feb 27 03:30:14 2020 +0000 (UTC) COBALT_QUEUE=default
+Thu Feb 27 03:30:14 2020 +0000 (UTC) 
+Thu Feb 27 03:30:14 2020 +0000 (UTC) Info: stdin received from /dev/null
+Thu Feb 27 03:30:14 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/411853.output
+Thu Feb 27 03:30:14 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamon/411853.error
+Thu Feb 27 03:30:14 2020 +0000 (UTC) 
+Thu Feb 27 03:57:26 2020 +0000 (UTC) Info: user delete requested with signal SIGTERM by user kmistry

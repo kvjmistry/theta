@@ -1,0 +1,4 @@
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamoff_chain_run1 --time-limit-min=58
+/bin/python3 /usr/local/lib64/python3.6/site-packages/balsam_flow-0.3.7-py3.6-linux-x86_64.egg/balsam/launcher/mpi_ensemble.py --wf-name=beamoff_chain_run1 --time-limit-min=58
+Application 19149046 exit signals: Terminated
+Application 19149046 resources: utime ~2s, stime ~7s, Rss ~24116, inblocks ~23382, outblocks ~0

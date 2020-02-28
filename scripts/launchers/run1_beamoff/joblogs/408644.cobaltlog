@@ -1,0 +1,29 @@
+Jobid: 408644
+qsub --mode script -A uboone -n 2 -q debug-flat-quad -t 30 --attrs ssds=required:ssd_size=128 launch_run1_beamoff.sh
+Mon Feb 10 00:08:51 2020 +0000 (UTC) submitted with cwd set to: /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff
+jobid 408644 submitted from terminal /dev/pts/1
+2020-02-10 00:11:30,536 INFO: Starting Resource_Prologue
+2020-02-10 00:11:30,544 DEBUG: no enabling attribute found
+2020-02-10 00:11:30,544 INFO: Resource_Prologue finished with exit code 0
+Mon Feb 10 00:12:05 2020 +0000 (UTC) 
+Mon Feb 10 00:12:05 2020 +0000 (UTC) Command: '/lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/launch_run1_beamoff.sh'
+Mon Feb 10 00:12:05 2020 +0000 (UTC) 
+Mon Feb 10 00:12:05 2020 +0000 (UTC) Environment:
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_PARTCORES=64
+Mon Feb 10 00:12:05 2020 +0000 (UTC) SHELL=/bin/bash
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_PROJECT=uboone
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_PARTNAME=21-22
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_JOBID=408644
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_STARTTIME=1581293463
+Mon Feb 10 00:12:05 2020 +0000 (UTC) LOGNAME=kmistry
+Mon Feb 10 00:12:05 2020 +0000 (UTC) USER=kmistry
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_ENDTIME=1581295263
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_PARTSIZE=2
+Mon Feb 10 00:12:05 2020 +0000 (UTC) HOME=/home/kmistry
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_JOBSIZE=2
+Mon Feb 10 00:12:05 2020 +0000 (UTC) COBALT_QUEUE=debug-flat-quad
+Mon Feb 10 00:12:05 2020 +0000 (UTC) 
+Mon Feb 10 00:12:05 2020 +0000 (UTC) Info: stdin received from /dev/null
+Mon Feb 10 00:12:05 2020 +0000 (UTC) Info: stdout sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/408644.output
+Mon Feb 10 00:12:05 2020 +0000 (UTC) Info: stderr sent to /lus/theta-fs0/projects/uboone/kmistry/scripts/launchers/run1_beamoff/408644.error
+Mon Feb 10 00:12:05 2020 +0000 (UTC) 
