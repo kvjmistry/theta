@@ -13,7 +13,6 @@ import time
 # This script will take a file that has been processed at ANL, modify its parent
 # to be the swizzled file, add in the swizzler version to the metadata and then
 # create a json file for declaring to SAM
-# This probably only works for beam off run 1 for now!
 # To run do python modify_metadata.py <your files>
 # ------------------------------------------------------------------------------
 
@@ -36,9 +35,9 @@ for infile in sys.argv[1:]:
     mdgen = extractor_dict.expMetaData('uboone', infile)
     md = mdgen.getmetadata()
 
-    # Modify the parent file in the metadata to be the swizzled/beamdata/crtmerged file [whatever the start file was]
+    # Modify the parent file to be the swizzled file
     parent = md['parents']
-    parent_name=parent[0]['file_name'].split("_event",1)[0]+".root" # This needs to be adjusted depending on whether it is beam on/beam off, run1 or run3
+    parent_name=parent[0]['file_name'].split("_event",1)[0]+".root"
     md['parents'] = parent_name
 
     # Now we want to get the swizzle version and add this to the metadata
@@ -82,7 +81,7 @@ for infile in sys.argv[1:]:
     if (debug == 2):
         print mdtext
 
-    # Declare the file to sam [leave this commented out, just for testing on 1 file]
+    # Declare the file to sam
     # samweb.declareFile(md=md)
 
 print "Metadata script took: ", time.time()-start, "seconds to run." 

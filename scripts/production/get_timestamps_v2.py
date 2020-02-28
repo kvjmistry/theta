@@ -5,26 +5,17 @@ import subprocess
 import sys
 from datetime import timedelta
 import time 
-import os
 
 # This script will get a time stamp corresponding to the average of the start and 
 # end time of the minimum and maximum parent of a file. It will make a list with 
 # the filename and timestamp in seconds from the unix epoch. 
-
-# Usage: python /lus/theta-fs0/projects/uboone/containers/get_timestamps_v2.py mylist.txt v01b/v27
 
 # In this v2 version, instead of using sam metadata, we use an input string from 
 # a LArSoft Module
 
 infile = open(sys.argv[1], "r")
 
-version = sys.argv[2]
-
-outname = sys.argv[1][:-4] + "_" + version  + "_timestamps.txt"
-
-inIOV = "/lus/theta-fs0/projects/uboone/kmistry/IOV/" + version + "/*.txt"
-
-print(inIOV)
+outname = sys.argv[1][:-4] + "_timestamps.txt"
 
 outfile = open(outname, "w")
 
@@ -42,7 +33,7 @@ for _file in infile:
     timestamp = datetime.datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S.000000000Z')
 
     # Now we have time stamp, we want to find the interval of validity this time fall in.
-    files_IOV = glob.glob(inIOV)
+    files_IOV = glob.glob("/lus/theta-fs0/projects/uboone/kmistry/IOV/*.txt")
 
     file_string ="event "+ str(event_index)
 
@@ -83,11 +74,10 @@ for _file in infile:
 
                     # Convert timestamp to time from epoch
                     #seconds_since_epoch = average_timestamp.timestamp() # This only works with python 3
-                    seconds_since_epoch  = time.mktime(average_timestamp.timetuple()) + average_timestamp.microsecond/1e6  #python 2 fix
+                    seconds_since_epoch  = time.mktime(average_timestamp.timetuple()) + average_timestamp.microsecond/1e6 #python 2 fix
 
                     # Make string
-                    file_part = os.path.basename(file_IOV)
-                    file_string = file_string + "," + file_part[:-4] + "," + str(seconds_since_epoch)
+                    file_string = file_string + "," + file_IOV[43:-4] + "," + str(seconds_since_epoch)
 
 
                 # Now the start time of the next check is the current end time

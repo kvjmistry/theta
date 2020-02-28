@@ -32,11 +32,9 @@ outputs:
     }
 }
 
-services.FileCatalogMetadata.applicationVersion: "v08_00_00_27"
-services.FileCatalogMetadata.fileType: "data"
-services.FileCatalogMetadata.runType: "physics"
+services.FileCatalogMetadata.applicationVersion: "v08_00_00_27" 
 services.FileCatalogMetadataMicroBooNE: {
-    FCLName: "reco_uboone_data_mcc9_8_driver_stage1.fcl/run_celltreeub_prod.fcl/run_BurstNoiseMetricsFilter.fcl/reco_uboone_mcc9_8_driver_data_ext_numi_optical.fcl/reco_uboone_data_mcc9_8_driver_stage2_beamOff_numi.fcl/standard_larcv_uboone_data2d_prod.fcl/reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_numi.fcl" 
+    FCLName: "reco_uboone_data_mcc9_8_driver_stage1.fcl/run_celltreeub_prod.fcl/standard_larcv_uboone_data2d_prod.fcl/run_BurstNoiseMetricsFilter.fcl/reco_uboone_mcc9_8_driver_data_ext_numi_optical.fcl/reco_uboone_data_mcc9_8_driver_stage2_beamOff_numi.fcl/reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_numi.fcl" 
     FCLVersion: "v08_00_00_27" 
     ProjectName: "data_numi_run3b_beamoff_theta_mcc9.1" 
     ProjectStage: "post_reco2" 

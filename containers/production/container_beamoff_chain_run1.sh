@@ -1,7 +1,4 @@
 #!/bin/bash
-
-# USAGE: ./container_beamoff_chain_run1.sh <The input file> <the number of events>
-
 echo "First Statement"
 date
 echo "TIMESTAMP_T7 $(date +%s)"
@@ -38,15 +35,15 @@ echo
 echo "Seeing which files exist in the directory, any files not found are listed as FileNotFound"
 echo "Reco1 file: $SINGULARITYENV_check_reco1"
 echo "Cell Tree file: $SINGULARITYENV_check_cell"
+echo "LArCV file: $SINGULARITYENV_check_larcv"
 echo "BNM file: $SINGULARITYENV_check_bnm"
 echo "Reco1a file: $SINGULARITYENV_check_r1a"
 echo "Reco2 file: $SINGULARITYENV_check_reco2"
-echo "LArCV file: $SINGULARITYENV_check_larcv"
 echo "Post Reco2 file: $SINGULARITYENV_check_postreco2"
 
 # This checks if we need to first setup uboonecode v01b, otherwise we skip to v27
 export SINGULARITYENV_v01b="false"
-if [ $SINGULARITYENV_check_reco1 == "FileNotFound" ] || [ $SINGULARITYENV_check_cell == "FileNotFound" ]; then
+if [ $SINGULARITYENV_check_reco1 == "FileNotFound" ] || [ $SINGULARITYENV_check_cell == "FileNotFound" ] || [ $SINGULARITYENV_check_larcv == "FileNotFound" ]; then
   SINGULARITYENV_v01b="true"
 fi
 
@@ -57,22 +54,22 @@ echo "Making custom fcl files with overrides"
 # makes fcl file with _url_override.fcl extension
 
 # reco1
-source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/reco_uboone_data_mcc9_8_driver_stage1.fcl" mylist_v01b_timestamps.txt
+source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/reco_uboone_data_mcc9_8_driver_stage1.fcl"
 
 # celltree
-source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/run_celltreeub_prod.fcl" mylist_v01b_timestamps.txt
+source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/run_celltreeub_prod.fcl"
 
 # larcv
-source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/standard_larcv_uboone_data2d_prod.fcl" mylist_v27_timestamps.txt
+source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/standard_larcv_uboone_data2d_prod.fcl"
 
 # reco1a
-source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/reco_uboone_mcc9_8_driver_data_ext_numi_optical.fcl" mylist_v27_timestamps.txt
+source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/reco_uboone_mcc9_8_driver_data_ext_numi_optical.fcl"
 
 # reco2
-source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/reco_uboone_data_mcc9_8_driver_stage2_beamOff_numi.fcl" mylist_v27_timestamps.txt
+source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/reco_uboone_data_mcc9_8_driver_stage2_beamOff_numi.fcl"
 
 # postreco2
-source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/postreco2/reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_run1_numi.fcl" mylist_v27_timestamps.txt
+source /lus/theta-fs0/projects/uboone/containers/timestamp_to_fcl_v2.sh $2 "/lus/theta-fs0/projects/uboone/kmistry/fcl/postreco2/reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_run1_numi.fcl"
 
 singularity run --no-home -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/uboone/containers/fnal-wn-sl7_latest.sif <<EOF
   echo 
@@ -101,6 +98,11 @@ singularity run --no-home -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/ub
     lar -c run_celltreeub_prod_url_override.fcl -s *reco1.root
   fi
   echo "------------------------------------------------------------------------"
+  if [ $SINGULARITYENV_check_larcv == "FileNotFound" ]; then
+    echo "lar -c standard_larcv_uboone_data2d_prod_url_override.fcl -s *postwcct.root"  
+    lar -c standard_larcv_uboone_data2d_prod_url_override.fcl -s *postwcct.root
+  fi
+  echo "------------------------------------------------------------------------"
   echo "Finished 01b, unsetting up v01b and setting up v27"
   date
   echo "TIMESTAMP_T7 $(date +%s)"
@@ -114,8 +116,8 @@ singularity run --no-home -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/ub
   echo "TIMESTAMP_T7 $(date +%s)"
   echo "------------------------------------------------------------------------"
   if [ $SINGULARITYENV_check_bnm == "FileNotFound" ]; then  
-    echo "lar -c run_BurstNoiseMetricsFilter.fcl -s *postwcct.root"
-    lar -c run_BurstNoiseMetricsFilter.fcl -s *postwcct.root
+    echo "lar -c run_BurstNoiseMetricsFilter.fcl -s *postdl.root"
+    lar -c run_BurstNoiseMetricsFilter.fcl -s *postdl.root
   fi
   echo "------------------------------------------------------------------------"
   if [ $SINGULARITYENV_check_r1a == "FileNotFound" ]; then  
@@ -128,14 +130,9 @@ singularity run --no-home -B /lus:/lus -B /soft:/soft /lus/theta-fs0/projects/ub
     lar -c reco_uboone_data_mcc9_8_driver_stage2_beamOff_numi_url_override.fcl -s *r1a.root
   fi  
   echo "------------------------------------------------------------------------"
-  if [ $SINGULARITYENV_check_larcv == "FileNotFound" ]; then
-    echo "lar -c standard_larcv_uboone_data2d_prod_url_override.fcl -s *reco2.root"  
-    lar -c standard_larcv_uboone_data2d_prod_url_override.fcl -s *reco2.root
-  fi
-  echo "------------------------------------------------------------------------"
   if [ $SINGULARITYENV_check_postreco2 == "FileNotFound" ]; then
-    echo "lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_run1_numi_url_override.fcl  -s *postdl.root"
-    lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_run1_numi_url_override.fcl  -s *postdl.root
+    echo "lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_run1_numi_url_override.fcl  -s *reco2.root"
+    lar -c reco_uboone_data_mcc9_1_8_driver_poststage2_filters_beamOff_run1_numi_url_override.fcl  -s *reco2.root
   fi
   echo "------------------------------------------------------------------------"
   echo "Finished Executing"
@@ -158,8 +155,8 @@ if [[ -z "$exit_status" ]]; then
 elif [[ -n "$exit_status" ]]; then
   echo "Found the post reco2 file, so this job has SUCCEEDED..."
   echo "Removing previous successful files from directory"
-  echo "rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root Pandora_Events.pndr"
-  rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root Pandora_Events.pndr
+  echo "rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root"
+  rm *reco2.root *r1a.root *BNMS.root *postdl.root *reco1.root celltreeDATA.root Pandora_Events.pndr larcv_wholeview.root larlite_reco2d.root
   echo "exit 0"
   exit 0
 else

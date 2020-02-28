@@ -47,7 +47,7 @@ tot_events=0
 max_events=8000000
 
 # The total number of files to process
-max_files=2
+max_files=192
 
 # The total number of files to be processed
 files_processed=0
